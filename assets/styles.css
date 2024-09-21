@@ -150,6 +150,7 @@ nav ul li a {
     align-items: center;
     text-align: center;
     justify-content: center;
+    bottom: 20px;
 }
 
 .projeto-gallery {
