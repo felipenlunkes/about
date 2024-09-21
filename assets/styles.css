@@ -149,7 +149,9 @@ nav ul li a {
     max-width: 600px;
     align-items: center;
     text-align: center;
-    bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projeto-gallery {
