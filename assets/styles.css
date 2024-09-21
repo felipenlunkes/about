@@ -179,11 +179,11 @@ nav ul li a {
     margin-top: 5px;
     font-size: 1rem;
     color: #555;
-    word-wrap: break-word; /* Garante quebra de texto longo */
+    word-wrap: break-word;
 }
 
-.btn-github {
-    display: inline-block;
+.projeto-item .btn-github {
+    display: inline-block; 
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -192,9 +192,10 @@ nav ul li a {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
+    text-align: center;
 }
 
-.btn-github:hover {
+.projeto-item .btn-github:hover {
     background-color: #555;
 }
 
