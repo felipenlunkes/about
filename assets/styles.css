@@ -31,7 +31,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0px; /* Espaço entre os links */
+    gap: 20px; /* Espaço entre os links */
     flex-wrap: nowrap; /* Evita quebra de linha */
 }
 
