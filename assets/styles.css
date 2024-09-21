@@ -206,8 +206,6 @@ nav ul li a {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    white-space: nowrap;
-    text-wrap: nowrap;
     word-wrap: break-word; /* Quebra de linha automática para texto longo */
 }
 
