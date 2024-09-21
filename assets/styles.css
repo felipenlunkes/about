@@ -50,7 +50,7 @@ nav ul li a {
     text-align: center;
 }
 
-#portfolio {
+#projeto {
     background-color: #fff;
 }
 
@@ -106,13 +106,13 @@ nav ul li a {
     }
 }
 
-.portfolio-gallery {
+.projeto-gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.portfolio-item {
+.projeto-item {
     margin: 20px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -121,11 +121,11 @@ nav ul li a {
     transition: transform 0.3s ease-in-out;
 }
 
-.portfolio-item:hover {
+.projeto-item:hover {
     transform: scale(1.05);
 }
 
-.portfolio-item img {
+.projeto-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
