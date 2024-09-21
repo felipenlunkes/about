@@ -131,7 +131,6 @@ nav ul li a {
     border-radius: 8px;
 }
 
-/* Estilo para os ícones de redes sociais */
 .social-links {
     margin-top: 30px;
 }
@@ -145,6 +144,41 @@ nav ul li a {
 
 .social-links a:hover {
     color: #0056b3;
+}
+
+.blog {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-link {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    border: 2px solid #bd8735;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-link:hover {
+    background-color: #bd8735;
+    color: #fff;
 }
 
 footer {
