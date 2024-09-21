@@ -50,10 +50,6 @@ nav ul li a {
     text-align: center;
 }
 
-#projeto {
-    background-color: #fff;
-}
-
 .sobre-mim {
     display: flex;
     flex-direction: column;
@@ -80,12 +76,6 @@ nav ul li a {
 .sobre-texto {
     max-width: 600px;
     text-align: justify;
-}
-
-.projeto-texto {
-    max-width: 600px;
-    align-items: center;
-    text-align: center;
 }
 
 /* Responsividade para telas maiores */
@@ -145,6 +135,16 @@ nav ul li a {
 .blog-link:hover {
     background-color: #bd8735;
     color: #fff;
+}
+
+#projeto {
+    background-color: #fff;
+}
+
+.projeto-texto {
+    max-width: 600px;
+    align-items: center;
+    text-align: center;
 }
 
 .projeto-gallery {
