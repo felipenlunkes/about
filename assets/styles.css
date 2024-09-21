@@ -155,7 +155,7 @@ nav ul li a {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    text-align: center;
+    text-align: justify;
     word-wrap: break-word; /* Quebra de linha automática para texto longo */
 }
 
