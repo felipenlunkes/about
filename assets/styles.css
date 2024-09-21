@@ -22,7 +22,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: #bd8735;
     padding: 20px;
 }
 
@@ -49,17 +49,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #bd8735;
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 600px) {
-    header nav ul {
-        gap: 10px; /* Reduz o espaço entre os links em telas menores */
-    }
-
-    header nav ul li a {
-        font-size: 1rem; /* Reduz o tamanho da fonte em dispositivos móveis */
-    }
 }
 
 nav ul {
@@ -127,6 +116,22 @@ nav ul li a {
 }
 
 /* Responsividade para telas maiores */
+
+/* Ajustes para telas menores */
+
+@media (max-width: 600px) {
+   
+    header nav ul {
+        gap: 10px; /* Reduz o espaço entre os links em telas menores */
+    }
+
+    header nav ul li a {
+        font-size: 1rem; /* Reduz o tamanho da fonte em dispositivos móveis */
+    }
+}
+
+
+/* Ajustes para telas maiores */
 
 @media (min-width: 768px) {
    
