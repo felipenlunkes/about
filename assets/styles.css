@@ -112,7 +112,7 @@ nav ul li a {
 }
 
 #projeto {
-    background-color: #fff;
+    background-color: #f9f9f9;
 }
 
 /* Responsividade para telas maiores */
@@ -164,7 +164,7 @@ nav ul li a {
 /* Fim da seção de responsividade */
 
 .blog {
-    background-color: #f9f9f9;
+    background-color: #ebddcd;
     padding: 50px;
     text-align: center;
 }
