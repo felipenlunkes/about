@@ -151,7 +151,7 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 40px; /* Espaço entre os itens */
+    gap: 20px; /* Espaço entre os itens */
 }
 
 .projeto-item {
