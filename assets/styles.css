@@ -82,6 +82,11 @@ nav ul li a {
     text-align: justify;
 }
 
+.projeto-texto {
+    max-width: 600px;
+    text-align: center;
+}
+
 /* Responsividade para telas maiores */
 @media (min-width: 768px) {
     .sobre-mim {
