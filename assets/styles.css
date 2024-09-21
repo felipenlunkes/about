@@ -200,12 +200,9 @@ nav ul li a {
 
 .projeto-texto {
     max-width: 600px;
-    align-items: center;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .projeto-gallery {
