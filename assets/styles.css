@@ -18,6 +18,50 @@ header {
     text-align: center;
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre os links */
+    flex-wrap: nowrap; /* Evita quebra de linha */
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    white-space: nowrap; /* Evita quebra de linha nos links */
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #bd8735;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    header nav ul {
+        gap: 10px; /* Reduz o espaço entre os links em telas menores */
+    }
+
+    header nav ul li a {
+        font-size: 1rem; /* Reduz o tamanho da fonte em dispositivos móveis */
+    }
+}
+
 nav ul {
     display: flex;
     justify-content: center;
