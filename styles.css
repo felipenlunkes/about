@@ -7,12 +7,12 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-color: #d3c2b2;
     color: #333;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #df7818;
     color: white;
     padding: 20px;
     text-align: center;
@@ -74,7 +74,7 @@ nav ul li a {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #007bff;
+    border: 5px solid #df7818;
     margin-bottom: 20px;
 }
 
