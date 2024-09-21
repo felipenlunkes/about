@@ -110,15 +110,18 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
 }
 
 .projeto-item {
-    margin: 20px;
+    width: 300px; /* Largura fixa para o item */
     padding: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    text-align: center; /* Centraliza o texto */
+    word-wrap: break-word; /* Quebra de linha automática para texto longo */
 }
 
 .projeto-item:hover {
@@ -126,9 +129,22 @@ nav ul li a {
 }
 
 .projeto-item img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Imagem ocupa toda a largura do item */
+    height: 150px; /* Altura fixa da imagem */
+    object-fit: cover; /* Mantém o aspecto da imagem */
     border-radius: 8px;
+}
+
+.projeto-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.projeto-item p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #555;
+    word-wrap: break-word; /* Garante quebra de texto longo */
 }
 
 .social-links {
