@@ -7,7 +7,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #d3c2b2;
+    background-color: #259759;
     color: #333;
 }
 
@@ -133,7 +133,7 @@ nav ul li a {
 
 footer {
     padding: 20px;
-    background-color: #007bff;
+    background-color: #df7818;
     color: white;
     text-align: center;
 }
