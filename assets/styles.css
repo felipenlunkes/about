@@ -54,7 +54,6 @@ nav ul li a {
     background-color: #fff;
 }
 
-/* Seção Sobre Mim com imagem de perfil */
 .sobre-mim {
     display: flex;
     flex-direction: column;
@@ -80,6 +79,7 @@ nav ul li a {
 
 .sobre-texto {
     max-width: 600px;
+    text-align: justify;
 }
 
 /* Responsividade para telas maiores */
