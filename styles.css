@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero {
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+#portfolio {
+    background-color: #fff;
+}
+
+/* Seção Sobre Mim com imagem de perfil */
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+    margin-bottom: 20px;
+}
+
+.sobre-texto {
+    max-width: 600px;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    .sobre-mim {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .perfil-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .perfil-img {
+        width: 250px;
+        height: 250px;
+        margin-right: 30px;
+    }
+
+    .sobre-texto {
+        max-width: 600px;
+    }
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
