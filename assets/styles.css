@@ -114,6 +114,7 @@ nav ul li a {
 .sobre-texto .cv-link {
     margin-top: 10px;
     padding: 10px 20px;
+    align-items: center;
     font-size: 1.2rem;
     color: #bd8735;
     text-decoration: none;
@@ -123,7 +124,7 @@ nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.projeto-texto .cv-link:hover {
+.sobre-texto .cv-link:hover {
     background-color: #bd8735;
     color: #fff;
 }
