@@ -203,6 +203,8 @@ nav ul li a {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    white-space: nowrap;
+    text-wrap: nowrap;
 }
 
 .projeto-gallery {
