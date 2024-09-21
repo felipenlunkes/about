@@ -34,7 +34,7 @@ header nav ul li {
 
 header nav ul li:not(:last-child)::after {
     content: "|"; /* Adiciona o separador */
-    color: white;  
+    color: #582902;  
     margin-left: 10px; /* Espaçamento antes e depois do separador */
     margin-right: 10px;
 }
