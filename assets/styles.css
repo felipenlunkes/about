@@ -83,7 +83,9 @@ nav ul li a {
 }
 
 /* Responsividade para telas maiores */
+
 @media (min-width: 768px) {
+   
     .sobre-mim {
         flex-direction: row;
         justify-content: center;
@@ -109,6 +111,8 @@ nav ul li a {
         max-width: 600px;
     }
 }
+
+/* Fim da seção de responsividade */
 
 .blog {
     background-color: #f9f9f9;
