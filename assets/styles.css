@@ -159,7 +159,7 @@ nav ul li a {
     }
 
     header nav ul li a {
-        font-size: 1rem; /* Reduz o tamanho da fonte em dispositivos móveis */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte em dispositivos móveis */
     }
 }
 
