@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face { 
+    font-family: Comfortaa;
+    src: url('fonts/Comfortaa-Regular.ttf')
+}
+
+@font-face { 
+    font-family: Comfortaa;
+    font-weight: bold;
+    src: url('fonts/Comfortaa-Bold.ttf')
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     line-height: 1.6;
     background-color: #cec1a5;
     color: #333;
