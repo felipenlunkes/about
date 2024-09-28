@@ -1,3 +1,11 @@
+/*
+Copyright (c) 2024 Felipe Miguel Nery Lunkes
+Todos os direitos reservados.
+
+Licenciado sob licença BSD-3-Clause. Veja o arquivo /LICENSE para mais informações. 
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -148,54 +156,6 @@ nav ul li a {
     background-color: #f5eeeb;
 }
 
-/* Responsividade */
-
-/* Ajustes para telas menores */
-
-@media (max-width: 600px) {
-   
-    header nav ul {
-        gap: 10px; /* Reduz o espaço entre os links em telas menores */
-    }
-
-    header nav ul li a {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte em dispositivos móveis */
-    }
-}
-
-
-/* Ajustes para telas maiores */
-
-@media (min-width: 768px) {
-   
-    .sobre-mim {
-        flex-direction: row;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .perfil-container {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .perfil-img {
-        width: 250px;
-        height: 250px;
-        margin-right: 30px;
-    }
-
-    .sobre-texto {
-        max-width: 600px;
-    }
-
-    .projeto-texto {
-        max-width: 600px;
-    }
-}
-
-/* Fim da seção de responsividade */
-
 .blog {
     background-color: #ebddcd;
     padding: 50px;
@@ -322,7 +282,55 @@ footer {
     text-align: center;
 }
 
+/* Início da seção de responsividade */
+
+/* Ajustes para telas menores */
+
+@media (max-width: 600px) {
+   
+    header nav ul {
+        gap: 10px; /* Reduz o espaço entre os links em telas menores */
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte em dispositivos móveis */
+    }
+}
+
+/* Ajustes para telas maiores */
+
+@media (min-width: 768px) {
+   
+    .sobre-mim {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .perfil-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .perfil-img {
+        width: 250px;
+        height: 250px;
+        margin-right: 30px;
+    }
+
+    .sobre-texto {
+        max-width: 600px;
+    }
+
+    .projeto-texto {
+        max-width: 600px;
+    }
+}
+
+/* Fim da seção de responsividade */
+
 /* Animações */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
