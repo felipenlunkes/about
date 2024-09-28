@@ -218,6 +218,7 @@ nav ul li a {
     transition: transform 0.3s ease-in-out;
     text-align: justify;
     word-wrap: break-word; /* Quebra de linha automática para texto longo */
+    border-radius: 10px;
 }
 
 .projeto-item:hover {
