@@ -2,7 +2,7 @@
 Copyright (c) 2024 Felipe Miguel Nery Lunkes
 Todos os direitos reservados.
 
-Licenciado sob licença BSD-3-Clause. Veja o arquivo /LICENSE para mais informações.
+Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informações.
 */
 
 * {
@@ -290,7 +290,7 @@ footer {
 
 /* Início da seção de responsividade */
 
-/* Ajustes para telas menores */
+/* Ajustes para telas menores. Importante para botões e alinhamento/quebra de textos */
 
 @media (max-width: 600px) {
    
@@ -306,6 +306,17 @@ footer {
         align-items: center;
         text-align: center;
     }
+
+    .cv-link {
+        display: flex;  
+        justify-content: center;  
+    }
+
+    .projeto-item .btn-github {
+        display: flex; 
+        justify-content: center;
+    }
+
 }
 
 /* Ajustes para telas maiores */
