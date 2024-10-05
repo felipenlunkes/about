@@ -214,15 +214,18 @@ nav ul li a {
 }
 
 .projeto-item {
-    width: 300px; /* Largura fixa para o item */
+    width: 300px;
     padding: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     text-align: justify;
-    word-wrap: break-word; /* Quebra de linha automática para texto longo */
+    word-wrap: break-word;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Texto em cima, botão em baixo */
 }
 
 .projeto-item:hover {
@@ -230,8 +233,8 @@ nav ul li a {
 }
 
 .projeto-item img {
-    width: 100%; /* Imagem ocupa toda a largura do item */
-    height: 150px; /* Altura fixa da imagem */
+    width: 100%;
+    height: 150px;
     object-fit: cover; /* Mantém o aspecto da imagem */
     border-radius: 8px;
 }
@@ -249,7 +252,7 @@ nav ul li a {
 }
 
 .projeto-item .btn-github {
-    display: inline-block; 
+    display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -259,6 +262,9 @@ nav ul li a {
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
     text-align: center;
+    align-items: center;
+    align-self: center;
+    width: 95%;
 }
 
 .projeto-item .btn-github:hover {
