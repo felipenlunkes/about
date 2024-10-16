@@ -113,6 +113,24 @@ nav ul li a {
     text-align: center;
 }
 
+.sobre-texto {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.sobre-texto h2 {
+    padding-bottom: 20px;
+}
+
+.sobre-nome {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.sobre-nome p {
+    padding-bottom: 20px;
+}
+
 .perfil-container {
     display: flex;
     flex-direction: column;
@@ -127,16 +145,6 @@ nav ul li a {
     object-fit: cover;
     border: 5px solid #bd8735;
     margin-bottom: 20px;
-}
-
-.sobre-texto {
-
-    max-width: 600px;
-    text-align: justify;
-}
-
-.sobre-texto h2 {
-    padding-bottom: 10px;
 }
 
 .cv-link {
