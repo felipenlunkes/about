@@ -224,8 +224,8 @@ nav ul li a {
     word-wrap: break-word;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Texto em cima, botão em baixo */
+    flex-direction: column; /* Texto em cima, botão em baixo */
+    justify-content: space-between;
 }
 
 .projeto-item:hover {
