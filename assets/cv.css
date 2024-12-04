@@ -7,6 +7,7 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
 
 .timeline {
   padding: 50px;
+  padding-top: 50px;
 }
 
 .timeline h2 {
@@ -33,6 +34,7 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
 }
 
 .timeline p {
+  padding-left: 20px;
   font-size: 14px;
   color: #666;
   line-height: 1.5;
@@ -59,44 +61,76 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza os cards horizontalmente */
+  align-items: center;
   gap: 40px;
   padding: 20px;
 }
 
-.timeline-item {
-  position: relative;
-  display: flex;
-  flex-direction: row; /* Imagem ao lado do texto */
-  width: 100%; /* Cards ocupam toda a largura disponível */
-  max-width: 800px; /* Define um limite para a largura */
-  align-items: center;
-  transition: transform 0.3s ease-in-out;
+.timeline-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #bd8735;
+  z-index: 0; /* Certifique-se de que esta linha esteja atrás */
 }
 
 .timeline-card {
   display: flex;
-  flex-direction: row; /* Organiza imagem e texto lado a lado */
+  flex-direction: row;
   align-items: center;
   background: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   width: 100%;
-  max-width: 800px; /* Máximo em telas maiores */
+  max-width: 800px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Sobre a linha */
+  position: relative; /* Necessário para posicionar a linha vertical */
+  z-index: 10; /* Mantém os cards sobre a linha de conexão */
   transition: transform 0.3s ease-in-out;
 }
 
+.timeline-card-projetos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Necessário para posicionar a linha vertical */
+  z-index: 10; /* Mantém os cards sobre a linha de conexão */
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-card-projetos::before {
+  content: '';
+  position: absolute;
+  top: 15px; /* Espaçamento do topo */
+  bottom: 15px; /* Espaçamento do fundo */
+  width: 1px; /* Espessura da linha */
+  background-color: #bd8735; /* Cor da linha */
+  left: 110px; /* 15px de espaço + largura da imagem */
+  z-index: 1; /* Mantém a linha dentro do card */
+}
+
 .timeline-img {
-  flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+  flex-shrink: 0;
   width: 80px;
   height: 80px;
+  margin-right: 20px;
   border: 3px solid #bd8735;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 20px; /* Espaçamento entre imagem e texto */
+  position: relative; /* Garante que a linha interna não interfira na imagem */
+  z-index: 2; /* A imagem fica sobreposta à linha vertical */
 }
 
 .timeline-img img {
@@ -125,11 +159,12 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  margin-top: 20px;
   transition: background-color 0.3s;
 }
 
 .button:hover {
-  background: #9b6a2e;
+  background: #555;
 }
 
 .timeline-card:hover {
@@ -156,8 +191,13 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   .timeline {
     padding: 20px;
   }
+
   .timeline-container {
     padding: 0;
+  }
+
+  .timeline-card-projetos::before {
+    display: none; /* Remove a linha vertical em dispositivos móveis */
   }
 
   .timeline-item {
