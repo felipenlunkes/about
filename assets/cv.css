@@ -9,12 +9,37 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   padding: 50px;
 }
 
-/* Estilos para o título de cada seção */
 .timeline h2 {
   text-align: center;
   margin-bottom: 40px;
   color: #4d4d4d;
+  user-select: none;
 }
+
+.timeline h3 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #4d4d4d;
+  user-select: none;
+}
+
+.timeline h4 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #4d4d4d;
+  user-select: none;
+}
+
+.timeline p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  text-align: justify;
+  user-select: none;
+}
+
 
 /* Seção de projetos */
 .projetos {
@@ -31,56 +56,45 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   background-color: #e6dbd6;
 }
 
-/* Contêiner principal */
 .timeline-container {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Linha de conexão */
-.timeline-container:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;  /* Centraliza a linha */
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: #bd8735;
-  z-index: 1;
-}
-
-/* Cada item */
-.timeline-item {
   display: flex;
-  flex-direction: column;  /* Organiza os itens em coluna */
-  align-items: center;  /* Centraliza todos os itens */
-  margin-bottom: 40px;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: center;  /* Centraliza os itens na linha do tempo */
-  z-index: 2;
+  flex-direction: column; 
+  align-items: center; /* Centraliza os cards horizontalmente */
+  gap: 40px;
+  padding: 20px;
+}
+
+.timeline-item {
+  position: relative; 
+  display: flex;
+  width: 100%; /* Cards ocupam toda a largura disponível */
+  max-width: 800px; /* Define um limite para a largura */
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-card {
+  display: flex;
+  flex-direction: row; /* Organiza imagem e texto lado a lado */
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Sobre a linha */
   transition: transform 0.3s ease-in-out;
 }
 
 .timeline-img {
-  
-  position: relative;
-  width: 200px;
-  height: 200px;
+  flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+  width: 80px;
+  height: 80px;
+  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
   border: 3px solid #bd8735;
   border-radius: 50%;
   overflow: hidden;
-  object-fit: cover;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  z-index: 3;
-  margin-bottom: 20px; /* Espaço entre a imagem e o card */
 }
 
 .timeline-img img {
@@ -89,63 +103,31 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   object-fit: cover;
 }
 
-/* Card de cada item */
-.timeline-card {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-left: 20px;  /* Espaço entre a imagem e o cartão */
-  flex-grow: 1;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 3;
-  width: 100%;  /* Garante que o cartão ocupe o restante do espaço */
-  max-width: 400px;  /* Limita o tamanho máximo dos cartões */
+.timeline-content {
+  flex-grow: 1; /* Garante que o conteúdo se expanda */
+}
+
+.timeline-ano {
   text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.timeline-card .timeline-ano {
-  font-size: 16px;
-  font-weight: bold;
-  color: #bd8735;
-  margin-bottom: 8px;
-}
-
-.timeline-card h3 {
-  font-size: 20px;
-  color: #4d4d4d;
-}
-
-.timeline-card h4 {
-  font-size: 12px;
-  color: #4d4d4d;
-}
-
-.timeline-card p {
   font-size: 14px;
-  color: #6f6f6f;
-  margin: 10px 0;
-  text-align: justify;
+  color: #bd8735;
+  margin-bottom: 10px;
+  user-select: none;
 }
 
-.timeline-card .button {
+.button {
   display: inline-block;
-  padding: 8px 12px;
-  background-color: #bd8735;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #bd8735;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 14px;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  width: fit-content;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-.timeline-card .button:hover {
-  background-color: #555;
+.button:hover {
+  background: #9b6a2e;
 }
 
 .timeline-card:hover {
@@ -235,11 +217,11 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   .timeline-container:before {
       content: '';
       position: absolute;
-      top: 0;
+      top: 40px;
       left: 50%;  /* Centraliza a linha */
       transform: translateX(-50%);
       width: 2px;
-      height: 100%; /* Faz a linha cobrir todo o conteúdo */
+      height: 92%; /* Faz a linha cobrir todo o conteúdo */
       background-color: #bd8735;
       z-index: 1;
   }
