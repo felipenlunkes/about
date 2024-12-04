@@ -54,7 +54,7 @@ header nav ul {
     justify-content: center;
     align-items: center;
     gap: 20px; /* Espaço entre os links */
-    flex-wrap: nowrap; /* Evita quebra de linha */
+    flex-wrap: wrap; /* Permite quebra de linha quando necessário */
 }
 
 header nav ul li {
@@ -78,6 +78,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
 }
 
 nav ul li {
@@ -322,9 +323,7 @@ footer {
         gap: 10px; /* Reduz o espaço entre os links em telas menores */
     }
 
-    header nav ul li a {
-        font-size: 0.9rem; /* Reduz o tamanho da fonte em dispositivos móveis */
-    }
+   
 
     .sobre-texto h2 {
         align-items: center;

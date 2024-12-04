@@ -3,12 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetSection = document.querySelector(this.getAttribute('href'));
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
+            // Verificar se o link é uma âncora dentro da mesma página
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
