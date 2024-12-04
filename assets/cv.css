@@ -23,12 +23,12 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
 
 /* Seção de experiência profissional */
 .experiencia-professional {
-  background-color: #e6dbd6;
+  background-color: #f5eeeb;
 }
 
 /* Seção de formação acadêmica */
 .formacao-academica {
-  background-color: #f5eeeb;
+  background-color: #e6dbd6;
 }
 
 /* Contêiner principal */
@@ -66,12 +66,14 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
 }
 
 .timeline-img {
+  
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
   border: 3px solid #bd8735;
   border-radius: 50%;
   overflow: hidden;
+  object-fit: cover;
   flex-shrink: 0;
   display: flex;
   align-items: center;
