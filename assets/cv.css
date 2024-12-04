@@ -40,14 +40,13 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   user-select: none;
 }
 
-
 /* Seção de projetos */
 .projetos {
   background-color: #ebddcd;
 }
 
 /* Seção de experiência profissional */
-.experiencia-professional {
+.experiencia-profissional {
   background-color: #f5eeeb;
 }
 
@@ -59,17 +58,19 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
 .timeline-container {
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center; /* Centraliza os cards horizontalmente */
   gap: 40px;
   padding: 20px;
 }
 
 .timeline-item {
-  position: relative; 
+  position: relative;
   display: flex;
+  flex-direction: row; /* Imagem ao lado do texto */
   width: 100%; /* Cards ocupam toda a largura disponível */
   max-width: 800px; /* Define um limite para a largura */
+  align-items: center;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -82,6 +83,7 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   border-radius: 8px;
   padding: 20px;
   width: 100%;
+  max-width: 800px; /* Máximo em telas maiores */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10; /* Sobre a linha */
   transition: transform 0.3s ease-in-out;
@@ -91,10 +93,10 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   flex-shrink: 0; /* Evita que a imagem seja redimensionada */
   width: 80px;
   height: 80px;
-  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
   border: 3px solid #bd8735;
   border-radius: 50%;
   overflow: hidden;
+  margin-right: 20px; /* Espaçamento entre imagem e texto */
 }
 
 .timeline-img img {
@@ -134,105 +136,50 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   transform: scale(1.05);
 }
 
-/* Início da seção de responsividade */
+/* Linha de conexão (desktop) */
+.timeline-container:before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 50%; /* Centraliza a linha */
+  transform: translateX(-50%);
+  width: 2px;
+  height: 90%;
+  background-color: #bd8735;
+  z-index: 1;
+}
 
-/* Ajustes para telas menores. Importante para botões e alinhamento/quebra de textos */
 
+/* Ajustes para telas menores */
 @media screen and (max-width: 768px) {
+
+  .timeline {
+    padding: 20px;
+  }
   .timeline-container {
-      max-width: 100%;
-      padding: 0 10px;
+    padding: 0;
   }
 
   .timeline-item {
-      flex-direction: column;
-      align-items: center;
-      position: relative;
+    flex-direction: column; /* Imagem acima do texto */
+    align-items: center;
   }
 
   .timeline-img {
-      margin-bottom: 20px;
+    margin-right: 0; /* Remove o espaçamento lateral */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
   }
 
   .timeline-card {
-      margin-left: 0;
-      width: 100%;
-      max-width: 100%; /* Garante que os cards ocupem toda a largura */
-      box-shadow: none;
+    flex-direction: column; /* Texto abaixo da imagem */
+    align-items: center; /* Centraliza o texto */
+    text-align: center;
+    width: calc(100% - 20px); /* Ocupa quase toda a largura com margens */
+    max-width: 100%; /* Permite maior largura possível */
+    margin: 0 auto; /* Centraliza o card */
   }
 
-  .timeline-card h3 {
-      font-size: 16px;
-  }
-
-  .timeline-card p {
-      font-size: 13px;
-  }
-
-  .timeline-card .button {
-      font-size: 12px;
-      padding: 6px 10px;
-  }
-
-  /* Linha de conexão (para telas pequenas) */
   .timeline-container:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;  /* Centraliza a linha */
-      transform: translateX(-50%);
-      width: 2px;
-      height: 100%;
-      background-color: #bd8735;
-      z-index: 1;
+    height: 95%;
   }
 }
-
-/* Para telas maiores, a linha continua centralizada */
-@media screen and (min-width: 769px) {
-  .timeline-container {
-      max-width: 100%;
-  }
-
-  .timeline-item {
-      display: flex;
-      flex-direction: column; /* Imagem sempre acima do card */
-      justify-content: center;  /* Centraliza os itens */
-      align-items: center;
-      position: relative;
-  }
-
-  .timeline-img {
-      margin-bottom: 20px;
-  }
-
-  .timeline-card {
-      margin-left: 20px;  /* Espaço entre a imagem e o card */
-      width: 100%;  /* Garante que o card ocupe o restante do espaço */
-      max-width: 400px;  /* Limita o tamanho máximo dos cards */
-      text-align: center;
-  }
-
-  /* Linha de conexão */
-  .timeline-container:before {
-      content: '';
-      position: absolute;
-      top: 40px;
-      left: 50%;  /* Centraliza a linha */
-      transform: translateX(-50%);
-      width: 2px;
-      height: 92%; /* Faz a linha cobrir todo o conteúdo */
-      background-color: #bd8735;
-      z-index: 1;
-  }
-
-  .timeline-item {
-      display: flex;
-      flex-direction: column; /* Imagem sempre acima do card */
-      justify-content: center;
-      align-items: center;
-      position: relative;
-  }
-}
-
-/* Fim da seção de responsividade */
