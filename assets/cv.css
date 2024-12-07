@@ -114,12 +114,12 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
 .timeline-card-projetos::before {
   content: '';
   position: absolute;
-  top: 15px; /* Espaçamento do topo */
-  bottom: 15px; /* Espaçamento do fundo */
-  width: 1px; /* Espessura da linha */
-  background-color: #bd8735; /* Cor da linha */
-  left: 110px; /* 15px de espaço + largura da imagem */
-  z-index: 1; /* Mantém a linha dentro do card */
+  top: 15px; 
+  bottom: 15px;
+  width: 1px; 
+  background-color: #bd8735;
+  left: 110px; 
+  z-index: 1;
 }
 
 .timeline-img {
@@ -170,6 +170,10 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
 }
 
 .timeline-card:hover {
+  transform: scale(1.05);
+}
+
+.timeline-card-projetos:hover {
   transform: scale(1.05);
 }
 
