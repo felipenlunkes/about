@@ -453,7 +453,7 @@ nav ul li a {
 }
 
 .timeline-content p {
-    padding: 0px;
+  padding: 0px;
 }
 
 .timeline-ano {
@@ -584,7 +584,8 @@ footer p {
 
 @media screen and (max-width: 768px) {
   #timeline-projetos p {
-    padding-bottom: 30px;
+    font-size: 14px;
+    padding-bottom: 20px;
   }
 
   .timeline {
@@ -615,7 +616,7 @@ footer p {
   .timeline-card-projetos .timeline-content {
     order: 2; /* Texto depois da imagem */
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -641,6 +642,12 @@ footer p {
   .timeline-img {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .timeline-btn {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .timeline-card-projetos::before {
