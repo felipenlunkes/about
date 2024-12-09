@@ -300,44 +300,6 @@ nav ul li a {
   background-color: #555;
 }
 
-.linha-do-tempo {
-  padding: 50px;
-  padding-top: 50px;
-}
-
-.linha-do-tempo h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #4d4d4d;
-  user-select: none;
-}
-
-.linha-do-tempo h3 {
-  text-align: center;
-  margin: 0 0 10px;
-  font-size: 18px;
-  color: #4d4d4d;
-  user-select: none;
-}
-
-.linha-do-tempo h4 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #4d4d4d;
-  user-select: none;
-}
-
-.linha-do-tempo p {
-  padding-left: 20px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-  text-align: justify;
-  user-select: none;
-}
-
 /* Seção de projetos */
 .projetos {
   background-color: #ebddcd;
@@ -353,7 +315,45 @@ nav ul li a {
   background-color: #e6dbd6;
 }
 
-.linha-do-tempo-projetos-texto p {
+.timeline {
+  padding: 50px;
+  padding-top: 50px;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4d4d4d;
+  user-select: none;
+}
+
+.timeline h3 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #4d4d4d;
+  user-select: none;
+}
+
+.timeline h4 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #4d4d4d;
+  user-select: none;
+}
+
+.timeline p {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  text-align: justify;
+  user-select: none;
+}
+
+.timeline-projetos-texto p {
   font-size: 14px;
   align-items: center;
   text-align: center;
@@ -366,7 +366,7 @@ nav ul li a {
   user-select: none;
 }
 
-.linha-do-tempo-container {
+.timeline-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -375,7 +375,7 @@ nav ul li a {
   padding: 20px;
 }
 
-.linha-do-tempo-container:before {
+.timeline-container:before {
   content: "";
   position: absolute;
   top: 0;
@@ -387,7 +387,7 @@ nav ul li a {
   z-index: 0; /* Certificar que esta linha esteja atrás */
 }
 
-.linha-do-tempo-card {
+.timeline-card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -403,7 +403,7 @@ nav ul li a {
   transition: transform 0.3s ease-in-out;
 }
 
-.linha-do-tempo-card-projetos {
+.timeline-card-projetos {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -419,7 +419,7 @@ nav ul li a {
   transition: transform 0.3s ease-in-out;
 }
 
-.linha-do-tempo-card-projetos::before {
+.timeline-card-projetos::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -430,7 +430,7 @@ nav ul li a {
   z-index: 1;
 }
 
-.linha-do-tempo-img {
+.timeline-img {
   flex-shrink: 0;
   width: 80px;
   height: 80px;
@@ -442,17 +442,21 @@ nav ul li a {
   z-index: 2; /* A imagem fica sobreposta à linha vertical */
 }
 
-.linha-do-tempo-img img {
+.timeline-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.linha-do-tempo-content {
+.timeline-content {
   flex-grow: 1; /* Garante que o conteúdo se expanda */
 }
 
-.linha-do-tempo-ano {
+.timeline-content p {
+    padding: 0px;
+}
+
+.timeline-ano {
   text-align: center;
   font-size: 14px;
   color: #bd8735;
@@ -461,7 +465,16 @@ nav ul li a {
   user-select: none;
 }
 
-.button {
+.timeline-ano-projeto {
+  text-align: center;
+  font-size: 14px;
+  color: #bd8735;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.timeline-btn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
@@ -473,20 +486,20 @@ nav ul li a {
   transition: background-color 0.3s;
 }
 
-.button:hover {
+.timeline-btn:hover {
   background: #555;
 }
 
-.linha-do-tempo-card:hover {
+.timeline-card:hover {
   transform: scale(1.05);
 }
 
-.linha-do-tempo-card-projetos:hover {
+.timeline-card-projetos:hover {
   transform: scale(1.05);
 }
 
 /* Linha de conexão */
-.linha-do-tempo-container:before {
+.timeline-container:before {
   content: "";
   position: absolute;
   top: 40px;
@@ -498,26 +511,26 @@ nav ul li a {
   z-index: 1;
 }
 
-.linha-do-tempo {
+.timeline {
   justify-items: center;
   align-items: center;
   text-align: center;
   user-select: none;
 }
 
-.linha-do-tempo-texto {
+.timeline-texto {
   text-align: center;
 }
 
-.linha-do-tempo-texto p {
+.timeline-texto p {
   font-size: 16px;
   text-align: center;
 }
 
-#linha-do-tempo-projetos p {
-    font-size: 16px;
-    margin: 0px;
-    padding-left: 0px;
+#timeline-projetos p {
+  font-size: 16px;
+  margin: 0px;
+  padding-left: 0px;
 }
 
 .social-links {
@@ -570,43 +583,71 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  
-  #linha-do-tempo-projetos p {
+  #timeline-projetos p {
     padding-bottom: 30px;
   }
 
-  .linha-do-tempo {
+  .timeline {
     padding: 50px;
   }
 
-  .linha-do-tempo-container {
+  .timeline-container {
     padding: 0;
   }
 
-  .linha-do-tempo-card-projetos::before {
-    display: none; /* Remove a linha vertical em dispositivos móveis */
+  .timeline-card {
+    flex-direction: column; /* Texto abaixo da imagem */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; /* Centraliza o card */
   }
 
-  .linha-do-tempo-item {
+  .timeline-card-projetos {
+    display: flex;
+    flex-direction: column; /* Empilhar */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .timeline-card-projetos .timeline-content {
+    order: 2; /* Texto depois da imagem */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .timeline-card-projetos .timeline-content img {
+    order: 1; /* A imagem aparece primeiro */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0px;
+  }
+
+  .timeline-ano-projeto {
+    margin-top: 0px;
+  }
+
+  .timeline-item {
     flex-direction: column; /* Imagem acima do texto */
     align-items: center;
   }
 
-  .linha-do-tempo-img {
-    margin-right: 0; /* Remove o espaçamento lateral */
-    margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+  .timeline-img {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
-  .linha-do-tempo-card {
-    flex-direction: column; /* Texto abaixo da imagem */
-    align-items: center; /* Centraliza o texto */
-    text-align: center;
-    width: calc(100% - 20px); /* Ocupa quase toda a largura com margens */
-    max-width: 100%; /* Permite maior largura possível */
-    margin: 0 auto; /* Centraliza o card */
+  .timeline-card-projetos::before {
+    display: none; /* Remove a linha vertical em dispositivos móveis */
   }
 
-  .linha-do-tempo-container:before {
+  .timeline-container:before {
     height: 95%;
   }
 }
@@ -614,7 +655,6 @@ footer p {
 /* Ajustes para telas maiores */
 
 @media (min-width: 768px) {
- 
   .sobre-mim {
     flex-direction: row;
     justify-content: center;
