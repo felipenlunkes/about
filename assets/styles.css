@@ -64,8 +64,8 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espaço entre os links */
-  flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+  gap: 50px; /* Espaço entre os links */
+  flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -76,7 +76,7 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
-  white-space: nowrap; /* Evita quebra de linha nos links */
+  white-space: nowrap;
   transition: color 0.3s;
 }
 
@@ -220,6 +220,27 @@ nav ul li a {
   color: #fff;
 }
 
+.top-btn {
+  position: fixed;
+  right: 5px;
+  bottom: 70px;
+  padding: 10px 15px;
+  background-color: #bd8735;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  display: none; /* Esconde inicialmente */
+  z-index: 100;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+
+.top-btn:hover {
+  background-color: #555;
+}
+
 #projeto {
   background-color: #f5eeeb;
 }
@@ -234,6 +255,12 @@ nav ul li a {
   padding-top: 20px;
   padding-bottom: 20px;
   user-select: none;
+}
+
+.projeto-texto a {
+  text-decoration: none;
+  color: #bd8735;
+  font-size: bold;
 }
 
 .projeto-gallery {
@@ -366,6 +393,43 @@ nav ul li a {
   margin-right: auto;
   word-wrap: break-word; /* Quebra de linha automática para texto longo */
   user-select: none;
+}
+
+.hidden {
+  height: 0;
+}
+
+#timeline-projetos-container-cl {
+  padding-top: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s 0.5s;
+  padding-bottom: 10px;
+}
+
+#timeline-projetos-container-cl.open {
+  height: auto;
+  overflow: visible;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0.5s ease-out, opacity 0.5s ease-out, visibility 0s 0s;
+  padding-top: 10px;
+}
+
+.toggle-btn {
+  background-color: #bd8735;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.toggle-btn:hover {
+  background-color: #555;
 }
 
 .timeline-container {
@@ -508,7 +572,7 @@ nav ul li a {
   left: 50%; /* Centralizar a linha */
   transform: translateX(-50%);
   width: 2px;
-  height: 90%;
+  height: 92%;
   background-color: #bd8735;
   z-index: 1;
 }
@@ -527,6 +591,12 @@ nav ul li a {
 .timeline-texto p {
   font-size: 16px;
   text-align: center;
+}
+
+.timeline-texto a {
+  text-decoration: none;
+  color: #bd8735;
+  font-size: bold;
 }
 
 #timeline-projetos p {
@@ -552,6 +622,7 @@ nav ul li a {
 }
 
 footer p {
+  margin: 0;
   padding: 20px;
   background-color: #bd8735;
   color: white;
@@ -565,7 +636,8 @@ footer p {
 
 @media (max-width: 600px) {
   header nav ul {
-    gap: 10px; /* Reduz o espaço entre os links em telas menores */
+    gap: 30px;
+    line-height: 10px;
   }
 
   .sobre-texto h2 {
