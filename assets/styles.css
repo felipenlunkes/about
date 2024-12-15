@@ -426,6 +426,7 @@ nav ul li a {
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .toggle-btn:hover {
