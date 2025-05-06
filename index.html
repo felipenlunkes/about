@@ -174,9 +174,13 @@
                             <h3>POC-CRUD-csharp</h3>
                             <p>
                                 O POC-CRUD-csharp é uma prova de conceito de aplicação backend desenvolvida em <strong>C#</strong> 
-                                que implementa o acesso e manipulação de dados em uma base <strong>MySQL</strong> 
-                                (<strong>e, futuramente, SQL Server</strong>). Esse projeto será utilizado em futuras implementações,
-                                como modelo.
+                                que implementa o acesso e manipulação de dados em uma base <strong>MySQL</strong>. Utilizando 
+                                <strong><a class="timeline-content-link" href="https://learn.microsoft.com/en-us/ef/">Entity Framework</a></strong> 
+                                e <strong><a class="timeline-content-link" href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc">ASP.NET MVC</a></strong>,
+                                implementa uma arquitetura limpa sobre o modelo MVC (<strong>MVC + Services + Repositories</strong>),
+                                com injeção automática de dependências via interfaces IService e IRepository criadas para o projeto,
+                                mapeamento de exceções para respostas HTTP adequadas e autenticação via JWT (Web Token).
+                                Esse projeto será utilizado em futuras implementações, como modelo.
                             </p>
                             <a href="https://github.com/felipenlunkes/poc-crud-csharp" target="_blank" class="timeline-btn">Ver no GitHub</a>
                      </div>

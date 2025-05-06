@@ -600,6 +600,12 @@ nav ul li a {
   font-size: bold;
 }
 
+.timeline-content-link {
+  text-decoration: none;
+  color: #bd8735;
+  font-size: bold;
+}
+
 #timeline-projetos p {
   font-size: 16px;
   margin: 0px;
