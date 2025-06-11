@@ -151,6 +151,12 @@ nav ul li a {
   padding-bottom: 20px;
 }
 
+.sobre-texto > p > a {
+  text-decoration: none;
+  color: #bd8735;
+  font-size: bold;
+}
+
 .perfil-container {
   display: flex;
   flex-direction: column;
