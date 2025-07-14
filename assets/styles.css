@@ -580,7 +580,7 @@ nav ul li a {
   left: 50%; /* Centralizar a linha */
   transform: translateX(-50%);
   width: 2px;
-  height: 92%;
+  height: calc(100% - 90px);
   background-color: #bd8735;
   z-index: 1;
 }
