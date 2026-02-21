@@ -1,781 +1,1090 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Felipe Miguel Nery Lunkes">
-    <meta name="copyright" content="(c) 2024-2026 Felipe Miguel Nery Lunkes">
-    <meta name="license" content="BSD-3-Clause">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Felipe Miguel Nery Lunkes" />
+    <meta name="copyright" content="(c) 2024-2026 Felipe Miguel Nery Lunkes" />
+    <meta name="license" content="BSD-3-Clause" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
     <title>Felipe Lunkes</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
     <script defer src="assets/js/scripts.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#blog">Agente x86</a></li>
+          <li><a href="#projeto">Projetos em destaque</a></li>
+          <li><a href="#timeline">Linha do Tempo</a></li>
+          <li><a href="#contato">Contato e portfólio</a></li>
+        </ul>
+      </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#blog">Agente x86</a></li>
-                <li><a href="#projeto">Projetos em destaque</a></li>
-                <li><a href="#timeline">Linha do Tempo</a></li>
-                <li><a href="#contato">Contato e portfólio</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero">
-            <h1>Felipe Lunkes</h1>
-            <p>Desenvolvedor backend</p>
-        </div>
-
+      <div class="hero">
+        <h1>Felipe Lunkes</h1>
+        <p>Desenvolvedor backend</p>
+      </div>
     </header>
 
     <section id="sobre" class="section sobre-mim">
+      <div class="perfil-container">
+        <img
+          src="assets/img/foto_perfil.jpg"
+          alt="Foto de perfil"
+          class="perfil-img"
+        />
 
-        <div class="perfil-container">
-            <img src="assets/img/foto_perfil.jpg" alt="Foto de perfil" class="perfil-img">
+        <div class="sobre-texto">
+          <h2>Sobre mim</h2>
 
-            <div class="sobre-texto">
-                <h2>Sobre mim</h2>
-                
-                <div class="sobre-nome">
-                    <p>Olá! Meu nome é Felipe Lunkes, mas pode me chamar de Lunx!</p>
-                </div>
+          <div class="sobre-nome">
+            <p>Olá! Meu nome é Felipe Lunkes, mas pode me chamar de Lunx!</p>
+          </div>
 
-                <p>
-                    Sou um desenvolvedor <strong>backend pleno</strong> com experiência no desenvolvimento de soluções utilizando 
-                    <strong>Java</strong> (Spring Framework e Spring Boot), <strong>C#</strong> (ASP.NET e Entity Framework) e
-                    <strong>Python</strong>.
-                    Atuo na construção de aplicações <strong>escaláveis</strong>, com foco em arquitetura de 
-                    <strong>microsserviços orientada a eventos</strong>, utilizando <strong>APIs RESTful</strong>,
-                    <strong>bancos de dados relacionais</strong> (MySQL) e <strong>não relacionais</strong> (MongoDB),
-                    <strong>Docker</strong>, <strong>Redis/Valkey</strong>, <strong>RabbitMQ</strong>, mensageria com <strong>Apache Kafka</strong> e
-                    <strong>Kinesis</strong>, além de <strong>serviços AWS</strong> (Lambda, S3 e SQS).
-                    Também possuo extensa prática em <strong>testes unitários e de integração</strong>.
-                </p>
-                <p>
-                    Possuo sólida experiência em diferentes linguagens e ecossistemas, incluindo <strong>Java</strong>, <strong>C#</strong>,
-                    <strong>Python</strong>, <strong>C</strong>, <strong>Assembly x86</strong> e <strong>shell scripts</strong>, 
-                    além de vivência prática com <strong>Rust</strong>, <strong>Python</strong>, <strong>JavaScript/TypeScript</strong>,
-                    <strong>HTML</strong> e <strong>CSS</strong>. Estou em constante evolução técnica, com <strong>destaque recente para Rust</strong>.
-                </p>
-                <br>
-                <p>
-                    Sou um entusiasta de programação baixo nível (Assembly x86) e interessado em design e implementação
-                    de sistemas operacionais.
-                    No meu tempo livre, você poderá me encontrar jogando, estudando, lendo, programando em 
-                    Assembly x86 ou me aventurando em Rust.
-                    Além disso, desenvolvo um sistema operacional completamente escrito em Assembly x86, que pode ser
-                    encontrado na minha <a href="#timeline"><strong>Linha do Tempo</strong></a> de projetos.
-                </p>
-                <br>
-                <p>
-                    Sinta-se a vontade para entrar em <a href="#contato"><strong>contato</strong></a> e saber mais sobre mim!
-                </p>
-                <a href="https://cv.lunx.me" target="_blank" class="cv-link">Meu currículo</a>
-            </div>
+          <p>
+            Sou um desenvolvedor <strong>backend pleno</strong> com experiência
+            no desenvolvimento de soluções utilizando
+            <strong>Java</strong> (Spring Framework e Spring Boot),
+            <strong>C#</strong> (ASP.NET e Entity Framework) e
+            <strong>Python</strong>. Atuo na construção de aplicações
+            <strong>escaláveis</strong>, com foco em arquitetura de
+            <strong>microsserviços orientada a eventos</strong>, utilizando
+            <strong>APIs RESTful</strong>,
+            <strong>bancos de dados relacionais</strong> (MySQL) e
+            <strong>não relacionais</strong> (MongoDB), <strong>Docker</strong>,
+            <strong>Redis/Valkey</strong>, <strong>RabbitMQ</strong>, mensageria
+            com <strong>Apache Kafka</strong> e <strong>Kinesis</strong>, além
+            de <strong>serviços AWS</strong> (Lambda, S3 e SQS). Também possuo
+            extensa prática em
+            <strong>testes unitários e de integração</strong>.
+          </p>
+          <p>
+            Possuo sólida experiência em diferentes linguagens e ecossistemas,
+            incluindo <strong>Java</strong>, <strong>C#</strong>,
+            <strong>Python</strong>, <strong>C</strong>,
+            <strong>Assembly x86</strong> e <strong>shell scripts</strong>, além
+            de vivência prática com <strong>Rust</strong>,
+            <strong>Python</strong>, <strong>JavaScript/TypeScript</strong>,
+            <strong>HTML</strong> e <strong>CSS</strong>. Estou em constante
+            evolução técnica, com <strong>destaque recente para Rust</strong>.
+          </p>
+          <br />
+          <p>
+            Sou um entusiasta de programação baixo nível (Assembly x86) e
+            interessado em design e implementação de sistemas operacionais. No
+            meu tempo livre, você poderá me encontrar jogando, estudando, lendo,
+            programando em Assembly x86 ou me aventurando em Rust. Além disso,
+            desenvolvo um sistema operacional completamente escrito em Assembly
+            x86, que pode ser encontrado na minha
+            <a href="#timeline"><strong>Linha do Tempo</strong></a> de projetos.
+          </p>
+          <br />
+          <p>
+            Sinta-se a vontade para entrar em
+            <a href="#contato"><strong>contato</strong></a> e saber mais sobre
+            mim!
+          </p>
+          <a href="https://cv.lunx.me" target="_blank" class="cv-link"
+            >Meu currículo</a
+          >
         </div>
-
+      </div>
     </section>
 
     <section id="blog" class="section blog">
-        <h2>Agente x86</h2>
-        <p>Um blog sobre programação, OSDev, hardware e tecnologia em geral, com uma pitada de Assembly x86 e Java.</p>
-        <a href="https://blog.lunx.me" target="_blank" class="blog-link">Ir para o Agente x86</a>
+      <h2>Agente x86</h2>
+      <p>
+        Um blog sobre programação, OSDev, hardware e tecnologia em geral, com
+        uma pitada de Assembly x86 e Java.
+      </p>
+      <a href="https://blog.lunx.me" target="_blank" class="blog-link"
+        >Ir para o Agente x86</a
+      >
     </section>
 
     <section id="projeto" class="section">
+      <h2>Projetos em destaque</h2>
 
-        <h2>Projetos em destaque</h2>
+      <div class="projeto-texto">
+        <p>Abaixo, alguns dos meus principais projetos.</p>
+        <p>
+          Vá até a <a href="#timeline">Linha do Tempo</a> para ver todos os
+          projetos.
+        </p>
+      </div>
 
-        <div class="projeto-texto">
-            <p>
-                Abaixo, alguns dos meus principais projetos.
-            </p>
-            <p>
-                Vá até a <a href="#timeline">Linha do Tempo</a> para ver todos os projetos.
-            </p>
+      <div class="projeto-gallery">
+        <div class="projeto-item">
+          <img
+            src="https://raw.githubusercontent.com/hexagonix/Doc/refs/heads/main/Img/HexagonixMinimalist.png"
+            alt="Hexagonix"
+          />
+          <h3>Hexagonix</h3>
+          <p>
+            O Hexagonix é um sistema operacional Unix-like, escrito do zero em
+            linguagem <strong>Assembly x86</strong>. Ele é construído sobre o
+            <strong>Hexagon</strong>, um núcleo (kernel) monolítico simples e
+            leve, com suporte a modo protegido (32 bits), interface de
+            dispositivos e sistema de arquivos FAT16 (leitura e escrita).
+            Compatível com hardware antigo (1999 em diante) e mais atual.
+          </p>
+          <a
+            href="https://github.com/hexagonix"
+            target="_blank"
+            class="btn-github"
+            >Ver no GitHub</a
+          >
         </div>
 
-        <div class="projeto-gallery">
-            
-            <div class="projeto-item">
-                <img src="https://raw.githubusercontent.com/hexagonix/Doc/refs/heads/main/Img/HexagonixMinimalist.png"
-                    alt="Hexagonix">
-                <h3>Hexagonix</h3>
-                <p>
-                    O Hexagonix é um sistema operacional Unix-like, escrito do zero em linguagem <strong>Assembly x86</strong>.
-                    Ele é construído sobre o <strong>Hexagon</strong>, um núcleo (kernel) monolítico simples
-                    e leve, com suporte a modo protegido (32 bits), interface de dispositivos e sistema de arquivos
-                    FAT16 (leitura e escrita). Compatível com hardware antigo (1999 em diante) e mais atual.
-                </p>
-                <a href="https://github.com/hexagonix" target="_blank" class="btn-github">Ver no GitHub</a>
-            </div>
-
-            <div class="projeto-item">
-                <img src="https://raw.githubusercontent.com/felipenlunkes/DoeTech/refs/heads/main/docs/img/icon.jpg"
-                    alt="DoeTech">
-                <h3>DoeTech</h3>
-                <p>
-                    O DoeTech é uma <strong>plataforma que visa criar uma interface entre empresas e pessoas físicas, interessadas
-                    em doar equipamentos eletrônicos, e instituições sociais ou pessoas carentes</strong>.
-                    A proposta do DoeTech é diminuir a produção de lixo eletrônico enquanto favorece a reutilização de equipamentos eletrônicos.
-                    Desenvolvido em <strong>C#</strong> e <strong>Angular</strong>.
-                    Premiado como projeto destaque em 01/2025 (PUC Minas).
-                </p>
-                <a href="https://github.com/felipenlunkes/DoeTech" target="_blank" class="btn-github">Ver no GitHub</a>
-            </div>
-            
-            <div class="projeto-item">
-                <img src="https://raw.githubusercontent.com/felipenlunkes/whichmedicine/refs/heads/main/codigo-fonte/assets/logo.png"
-                    alt="Which Medicine">
-                <h3>Which Medicine</h3>
-                <p>
-                    O Which Medicine é uma <strong>aplicação web frontend</strong> que visa proporcionar o acesso facilitado à informações
-                    relevantes sobre <strong>medicamentos</strong> e <strong>interações medicamentosas</strong>, auxiliando na redução
-                    de riscos associados à <strong>automedicação</strong>. Desenvolvido utilizando <strong>HTML</strong>, <strong>CSS (e Bootstrap)</strong> e
-                   <strong>JavaScript</strong>. Premiado como projeto destaque em 02/2024 (PUC Minas).
-                </p>
-                <a href="https://github.com/felipenlunkes/whichmedicine" target="_blank" class="btn-github">Ver no GitHub</a>
-            </div>
-
+        <div class="projeto-item">
+          <img
+            src="https://raw.githubusercontent.com/felipenlunkes/DoeTech/refs/heads/main/docs/img/icon.jpg"
+            alt="DoeTech"
+          />
+          <h3>DoeTech</h3>
+          <p>
+            O DoeTech é uma
+            <strong
+              >plataforma que visa criar uma interface entre empresas e pessoas
+              físicas, interessadas em doar equipamentos eletrônicos, e
+              instituições sociais ou pessoas carentes</strong
+            >. A proposta do DoeTech é diminuir a produção de lixo eletrônico
+            enquanto favorece a reutilização de equipamentos eletrônicos.
+            Desenvolvido em <strong>C#</strong> e <strong>Angular</strong>.
+            Premiado como projeto destaque em 01/2025 (PUC Minas).
+          </p>
+          <a
+            href="https://github.com/felipenlunkes/DoeTech"
+            target="_blank"
+            class="btn-github"
+            >Ver no GitHub</a
+          >
         </div>
 
-        <button id="top-btn" class="top-btn" onclick="voltarAoTopo()">⬆</button>
+        <div class="projeto-item">
+          <img
+            src="https://raw.githubusercontent.com/felipenlunkes/whichmedicine/refs/heads/main/codigo-fonte/assets/logo.png"
+            alt="Which Medicine"
+          />
+          <h3>Which Medicine</h3>
+          <p>
+            O Which Medicine é uma <strong>aplicação web frontend</strong> que
+            visa proporcionar o acesso facilitado à informações relevantes sobre
+            <strong>medicamentos</strong> e
+            <strong>interações medicamentosas</strong>, auxiliando na redução de
+            riscos associados à <strong>automedicação</strong>. Desenvolvido
+            utilizando <strong>HTML</strong>,
+            <strong>CSS (e Bootstrap)</strong> e <strong>JavaScript</strong>.
+            Premiado como projeto destaque em 02/2024 (PUC Minas).
+          </p>
+          <a
+            href="https://github.com/felipenlunkes/whichmedicine"
+            target="_blank"
+            class="btn-github"
+            >Ver no GitHub</a
+          >
+        </div>
+      </div>
 
+      <button id="top-btn" class="top-btn" onclick="voltarAoTopo()">⬆</button>
     </section>
 
     <!-- Linha do tempo aqui-->
 
     <section id="timeline" class="section timeline">
-
-        <div class="timeline-texto">
-            <h2>Minha linha do tempo</h2>
-                <p>
-                Abaixo, você encontrará uma linha do tempo com meus <a href="#timeline-projetos">projetos</a>, 
-                <a href="#profissional">experiências profissionais</a> e <a href="#formacao">formação acadêmica</a>.   
-                </p>
-
-        </div>
-
+      <div class="timeline-texto">
+        <h2>Minha linha do tempo</h2>
+        <p>
+          Abaixo, você encontrará uma linha do tempo com meus
+          <a href="#timeline-projetos">projetos</a>,
+          <a href="#profissional">experiências profissionais</a> e
+          <a href="#formacao">formação acadêmica</a>.
+        </p>
+      </div>
     </section>
 
     <section id="timeline-projetos" class="timeline projetos">
-        <h2>Meus projetos</h2>
-        <div class="timeline-projetos-texto">
-            <p>Todos os projetos abaixo foram liberados como software livre.</p>
+      <h2>Meus projetos</h2>
+      <div class="timeline-projetos-texto">
+        <p>Todos os projetos abaixo foram liberados como software livre.</p>
+      </div>
+
+      <button class="toggle-btn" onclick="exibirSecao()">
+        Mostrar projetos
+      </button>
+
+      <div
+        id="timeline-projetos-container-cl"
+        class="timeline-container hidden"
+      >
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/rust.png" alt="Gamer Monitor" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2026-atualmente</div>
+              <h3>Gamer Monitor</h3>
+              <p>
+                Gamer Monitor é um
+                <strong>monitor de desempenho em tempo real</strong> para Linux
+                construído em <strong>Rust</strong> utilizando
+                <strong>GTK4</strong>. O objetivo deste projeto é oferecer uma
+                ferramenta simples, leve e intuitiva que exibe a utilização dos
+                recursos do dispositivo, como carga de trabalho e temperatura
+                dos componentes. O Gamer Monitor agrega informações e dados de
+                uso do processaor, memória RAM, armazenamento (apenas NVMe) e
+                placa de vídeo. Ele é otimizado para placas AMD Radeon, mas há
+                suporte para placas da NVIDIA. Futuramente, informações mais
+                detalhadas de placas Intel Arc também estarão disponíveis.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/gamer-monitor"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
         </div>
 
-        <button class="toggle-btn" onclick="exibirSecao()">Mostrar projetos</button>
-
-        <div id="timeline-projetos-container-cl" class="timeline-container hidden">
-            
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/DoeTech/refs/heads/main/docs/img/icon.jpg" alt="DoeTech">
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-ano-projeto">2025-atualmente</div>
-                            <h3>DoeTech Mobile</h3>
-                            <p>
-                                O DoeTech Mobile é a nova iteração do DoeTech, projeto que pode ser encontrado à seguir.
-                                Desenvolvido em <strong>C#</strong> e <strong>React Native</strong>, implementa o mesmo backend do DoeTech,
-                                apenas substituindo a base <strong>MySQL</strong> por uma <strong>PostgreSQL</strong>.          
-                            </p>
-                            <a href="https://github.com/felipenlunkes/doetech-mobile" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                     </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/DoeTech/refs/heads/main/docs/img/icon.jpg" alt="DoeTech">
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-ano-projeto">2025-atualmente</div>
-                            <h3>DoeTech</h3>
-                            <p>
-                                O DoeTech é uma plataforma que visa criar uma interface entre empresas e pessoas físicas, interessadas em
-                                doar equipamentos eletrônicos que seriam descartados, e instituições sociais ou pessoas carentes que desejam
-                                receber esse tipo de equipamento. A proposta do DoeTech é diminuir a produção de lixo eletrônico enquanto
-                                favorece a reutilização de equipamentos eletrônicos por instituições de cunho social e pessoas de baixa renda.
-                                Desenvolvido em <strong>C#</strong> e <strong>Angular</strong>, utilizando
-                                <strong><a class="timeline-content-link" href="https://learn.microsoft.com/en-us/ef/">Entity Framework</a></strong> 
-                                e <strong><a class="timeline-content-link" href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc">ASP.NET MVC</a></strong>,
-                                implementa uma arquitetura limpa sobre o modelo MVC (<strong>MVC + Services + Repositories</strong>). Implementa também uma base
-                                <strong>MySQL</strong>, além do suporte a armazenamento de imagens e documentos utilizando o
-                                <strong><a class="timeline-content-link" href="https://azure.microsoft.com/pt-br/products/storage/blobs">Azure Blobs Storage</a></strong>.
-                                Suporta autenticação via JWT (Web Token), envio de notificações e emails e recuperação de senha sob demanda. Testado e validado em
-                                hospedagem no <strong><a class="timeline-content-link" href="https://azure.microsoft.com/pt-br/">Azure</a></strong>.
-                                O DoeTech foi premiado como <strong>projeto destaque</strong> realizado pelos alunos do curso de graduação em Análise 
-                                e Desenvolvimento de Sistemas da Pontifícia Universidade Católica de Minas Gerais (PUC Minas), 
-                                no primeiro semestre de 2025.
-                            </p>
-                            <a href="https://github.com/felipenlunkes/DoeTech" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                     </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/csharp.png" alt="POC-CRUD-csharp">
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-ano-projeto">2025-2025</div>
-                            <h3>POC-CRUD-csharp</h3>
-                            <p>
-                                O POC-CRUD-csharp é uma prova de conceito de aplicação backend desenvolvida em <strong>C#</strong> 
-                                que implementa o acesso e manipulação de dados em uma base <strong>MySQL</strong>. Utilizando 
-                                <strong><a class="timeline-content-link" href="https://learn.microsoft.com/en-us/ef/">Entity Framework</a></strong> 
-                                e <strong><a class="timeline-content-link" href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc">ASP.NET MVC</a></strong>,
-                                implementa uma arquitetura limpa sobre o modelo MVC (<strong>MVC + Services + Repositories</strong>),
-                                com injeção automática de dependências via interfaces IService e IRepository criadas para o projeto,
-                                mapeamento de exceções para respostas HTTP adequadas e autenticação via JWT (Web Token).
-                                Esse projeto será utilizado em futuras implementações, como modelo.
-                            </p>
-                            <a href="https://github.com/felipenlunkes/poc-crud-csharp" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                     </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/rust.png" alt="rust-bank">
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-ano-projeto">2025-atualmente</div>
-                            <h3>rust-bank</h3>
-                            <p>
-                                O rust-bank é uma aplicação que visa experimentar algumas particularidades do desenvolvimento utilizando a 
-                                linguagem <strong>Rust</strong>, como borrowing, módulos, crates, macros e etc. A aplicação simula operações
-                                bancárias e foi desenvolvida do zero. O rust-bank faz parte dos meus projetos de aprimoramento no desenvolvimento
-                                utilizando Rust em meu tempo livre.
-                            </p>
-                            <a href="https://github.com/felipenlunkes/rust-bank" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/whichmedicine/refs/heads/main/codigo-fonte/assets/logo-flat.png" alt="Which Medicine">
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-ano-projeto">2024-2025</div>
-                            <h3>Which Medicine</h3>
-                            <p>
-                                O Which Medicine é uma <strong>aplicação web frontend</strong> que visa proporcionar o acesso facilitado à informações
-                                relevantes sobre <strong>medicamentos</strong> e <strong>interações medicamentosas</strong>, auxiliando na redução
-                                de riscos associados à <strong>automedicação</strong>, possibilitando que os usuários possam utilizar os medicamentos
-                                com maior segurança. Desenvolvido utilizando <strong>HTML</strong>, <strong>CSS (e Bootstrap)</strong> e
-                                <strong>JavaScript</strong>. O Which Medicine foi premiado como <strong>projeto destaque</strong> realizado pelos alunos do curso de
-                                graduação em Análise e Desenvolvimento de Sistemas da Pontifícia Universidade Católica de Minas Gerais (PUC Minas), 
-                                no segundo semestre de 2024.
-                            </p>
-                            <a href="https://github.com/felipenlunkes/whichmedicine" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/agentex86/refs/heads/main/images/logo_200x200.png" alt="Agente x86">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2023-atualmente</div>
-                        <h3>Agente x86</h3>
-                        <p>
-                            O Agente x86 é um blog totalmente desenvolvido do zero utilizando apenas software livre, que trata
-                            de tópicos de programação, desenvolvimento de sistemas operacionais, hardware e tecnologia em geral.
-                            Desenvolvido utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>Markdown</strong>,
-                            <strong>JavaScript</strong> e <strong>Ruby</strong>.
-                            Já os posts são escritos em <strong>Markdown</strong>.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/agentex86" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/java.png" alt="FilmPlay">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2023-2023</div>
-                        <h3>FilmPlay</h3>
-                        <p>
-                            O FilmPlay é um pequeno projeto desenvolvido em <strong>Java</strong> para obter informações de
-                            filmes utilizando a API do OMDb. Para obter as informações via solicitação HTTP, o FilmPlay utiliza a
-                            biblioteca GSON para serializar e deserializar o JSON enviado como resposta. As bibliotecas e build
-                            da aplicação são gerenciados pelo Gradle.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/FilmPlay" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/run-ancient-unix/main/doc/banner.png" alt="Run Ancient UNIX">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2023-atualmente</div>
-                        <h3>Run Ancient UNIX</h3>
-                        <p>
-                            O projeto visa possibilitar a execução (via emulação), de forma fácil e descomplicada, de versões
-                            antigas do UNIX para PDP-11, VAX e x86 em hardware moderno, realizando o download e configuração das
-                            imagens, bem como a configuração do simulador e/ou gerenciador de máquinas virtuais (qemu).
-                            Desenvolvido utilizando <strong>shell script</strong> e <strong>Python</strong>.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/run-ancient-unix" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/markdown.png" alt="cv-exemplo">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2023-2023</div>
-                        <h3>cv-exemplo</h3>
-                        <p>
-                            O projeto visa exemplificar a criação de um currículo legível (para humanos e robôs) em Markdown,
-                            além da sua conversão para PDF. Esse formato é útil para oferecer um currículo sucinto, sem
-                            distrações e que pode ser processado por mecanismos automatizados de sites de cadastro e análise de
-                            currículo. Desenvolvido utilizando <strong>Markdown</strong> e <strong>shell script</strong>.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/cv-exemplo" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/shell.png" alt="freebsd-config">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2022-atualmente</div>
-                        <h3>freebsd-config</h3>
-                        <p>
-                            Projeto responsável por automatizar tarefas ligadas à instalação de pacotes não instalados por padrão
-                            em um sistema FreeBSD. O script permite instalar e configurar o servidor Xorg, instalar módulos de
-                            kernel das principais placas de vídeo e interfaces de rede, dentre outras funcionalidades.
-                            Desenvolvido utilizando <strong>shell script</strong>.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/freebsd-config" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/osdev/refs/heads/main/img/banner.png" alt="osdev-projects">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2022-atualmente</div>
-                        <h3>osdev-projects</h3>
-                        <p>
-                            O projeto documenta uma vasta lista de projetos de sistemas operacionais
-                            com código-fonte disponível em repositórios públicos.
-                            Também documenta sistemas operacionais históricos, como UNIX, CPM e MS-DOS, reunindo informações, referências, 
-                            tutoriais de execução e imagens de disco destes sistemas.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/osdev-projects" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/osdev/refs/heads/main/img/banner.png" alt="osdev">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2022-atualmente</div>
-                        <h3>osdev</h3>
-                        <p>
-                            O projeto tem como objetivo reunir, em um único local, uma coletânea de material referente a design e
-                            implementação de sistemas operacionais, hardware e programação voltada à desenvolvimento de sistemas
-                            operacionais.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/osdev" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/felipenlunkes/Lunix/refs/heads/main/Doc/header.gif" alt="Lunix">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2022-atualmente</div>
-                        <h3>Lunix</h3>
-                        <p>
-                            Lunix é um sistema operacional em estágio inicial de desenvolvimento, escrito em <strong>C</strong>
-                            (com componentes escritos em <strong>Assembly x86</strong>) para a arquitetura x86. Possui fins
-                            educacionais, auxiliando no aprendizado da linguagem C, de tópicos de hardware e de arquitetura
-                            de sistemas operacionais.
-                            Possui suporte a initrd (<i>initial ramdisk</i>) e alguns dispositivos.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/Lunix" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/assembly.png" alt="MIPS-asm">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2018-2018</div>
-                        <h3>MIPS-asm</h3>
-                        <p>
-                            Códigos <strong>Assembly MIPS</strong> escritos por mim para a disciplina de Organização de
-                            Computadores I (DCC006) do Departamento de Ciências da Computação da Universidade Federal de Minas Gerais (UFMG),
-                            em 2018. Os códigos neste repositório podem ser executados com o auxílio do
-                            <strong>MARS (MIPS Assembler and Runtime Simulator)</strong>.
-                        </p>
-                        <a href="https://github.com/felipenlunkes/MIPS-asm" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="https://raw.githubusercontent.com/hexagonix/Doc/refs/heads/main/Img/HexagonixMinimalist.png" alt="Hexagonix">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2014-atualmente</div>
-                        <h3>Hexagonix</h3>
-                        <p>
-                            O Hexagonix é um novo sistema operacional Unix-like, escrito do zero em linguagem
-                            <strong>Assembly x86</strong>.
-                            Ele é construído sobre o <strong>Hexagon</strong>, um núcleo (kernel) monolítico simples
-                            e leve, com suporte a modo protegido (32 bits), interface de dispositivos e sistema de arquivos
-                            FAT16 (leitura e escrita). Compatível com hardware antigo (1999 em diante) e atual.
-                        </p>
-                        <a href="https://github.com/hexagonix" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/linux.png" alt="Netuno S.O">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2011-2018</div>
-                        <h3>Netuno S.O</h3>
-                        <p>
-                            Netuno S.O (Netuno OS) é uma <strong>distribuição Linux autoral</strong> criada à partir dos tutoriais e guias do projeto
-                            <strong><a class="timeline-content-link" href="https://www.linuxfromscratch.org/">Linux From Scratch</a></strong>.
-                            Utiliza um kernel da série 2.6.x e apenas uma interface de linha de comando. Embora não esteja disponível em um
-                            repositório no meu GitHub, uma imagem de disco em sua última versão pode ser solicitada.
-                        </p>
-                        <a href="mailto:felipenldev@gmail.com" target="_blank" class="timeline-btn">Solicitar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-card-projetos">
-                        <div class="timeline-img">
-                            <img src="assets/img/assembly.png" alt="Bin S.O">
-                        </div>
-                        <div class="timeline-content">
-                        <div class="timeline-ano-projeto">2011-2014</div>
-                        <h3>Bin S.O</h3>
-                        <p>
-                            O Bin S.O é um sistema operacional feito como um hobby, para consolidar os estudos realizados em
-                            hardware e em <strong>Assembly x86</strong> (16-bit). Ele é um sistema operacional simples,
-                            monotarefa e monousuário, composto de uma série de utilitários e um kernel bastante simples,
-                            com sistema de arquivos BinFS (desenvolvido para ele).
-                        </p>
-                        <a href="https://github.com/felipenlunkes/Bin-S.O"" target="_blank" class="timeline-btn">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/DoeTech/refs/heads/main/docs/img/icon.jpg"
+                alt="DoeTech"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2025-atualmente</div>
+              <h3>DoeTech Mobile</h3>
+              <p>
+                O DoeTech Mobile é a nova iteração do DoeTech, projeto que pode
+                ser encontrado à seguir. Desenvolvido em <strong>C#</strong> e
+                <strong>React Native</strong>, implementa o mesmo backend do
+                DoeTech, apenas substituindo a base <strong>MySQL</strong> por
+                uma <strong>PostgreSQL</strong>.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/doetech-mobile"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/DoeTech/refs/heads/main/docs/img/icon.jpg"
+                alt="DoeTech"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2025-atualmente</div>
+              <h3>DoeTech</h3>
+              <p>
+                O DoeTech é uma plataforma que visa criar uma interface entre
+                empresas e pessoas físicas, interessadas em doar equipamentos
+                eletrônicos que seriam descartados, e instituições sociais ou
+                pessoas carentes que desejam receber esse tipo de equipamento. A
+                proposta do DoeTech é diminuir a produção de lixo eletrônico
+                enquanto favorece a reutilização de equipamentos eletrônicos por
+                instituições de cunho social e pessoas de baixa renda.
+                Desenvolvido em <strong>C#</strong> e <strong>Angular</strong>,
+                utilizando
+                <strong
+                  ><a
+                    class="timeline-content-link"
+                    href="https://learn.microsoft.com/en-us/ef/"
+                    >Entity Framework</a
+                  ></strong
+                >
+                e
+                <strong
+                  ><a
+                    class="timeline-content-link"
+                    href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc"
+                    >ASP.NET MVC</a
+                  ></strong
+                >, implementa uma arquitetura limpa sobre o modelo MVC (<strong
+                  >MVC + Services + Repositories</strong
+                >). Implementa também uma base <strong>MySQL</strong>, além do
+                suporte a armazenamento de imagens e documentos utilizando o
+                <strong
+                  ><a
+                    class="timeline-content-link"
+                    href="https://azure.microsoft.com/pt-br/products/storage/blobs"
+                    >Azure Blobs Storage</a
+                  ></strong
+                >. Suporta autenticação via JWT (Web Token), envio de
+                notificações e emails e recuperação de senha sob demanda.
+                Testado e validado em hospedagem no
+                <strong
+                  ><a
+                    class="timeline-content-link"
+                    href="https://azure.microsoft.com/pt-br/"
+                    >Azure</a
+                  ></strong
+                >. O DoeTech foi premiado como
+                <strong>projeto destaque</strong> realizado pelos alunos do
+                curso de graduação em Análise e Desenvolvimento de Sistemas da
+                Pontifícia Universidade Católica de Minas Gerais (PUC Minas), no
+                primeiro semestre de 2025.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/DoeTech"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/csharp.png" alt="POC-CRUD-csharp" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2025-2025</div>
+              <h3>POC-CRUD-csharp</h3>
+              <p>
+                O POC-CRUD-csharp é uma prova de conceito de aplicação backend
+                desenvolvida em <strong>C#</strong> que implementa o acesso e
+                manipulação de dados em uma base <strong>MySQL</strong>.
+                Utilizando
+                <strong
+                  ><a
+                    class="timeline-content-link"
+                    href="https://learn.microsoft.com/en-us/ef/"
+                    >Entity Framework</a
+                  ></strong
+                >
+                e
+                <strong
+                  ><a
+                    class="timeline-content-link"
+                    href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc"
+                    >ASP.NET MVC</a
+                  ></strong
+                >, implementa uma arquitetura limpa sobre o modelo MVC (<strong
+                  >MVC + Services + Repositories</strong
+                >), com injeção automática de dependências via interfaces
+                IService e IRepository criadas para o projeto, mapeamento de
+                exceções para respostas HTTP adequadas e autenticação via JWT
+                (Web Token). Esse projeto será utilizado em futuras
+                implementações, como modelo.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/poc-crud-csharp"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/rust.png" alt="rust-bank" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2025-atualmente</div>
+              <h3>rust-bank</h3>
+              <p>
+                O rust-bank é uma aplicação que visa experimentar algumas
+                particularidades do desenvolvimento utilizando a linguagem
+                <strong>Rust</strong>, como borrowing, módulos, crates, macros e
+                etc. A aplicação simula operações bancárias e foi desenvolvida
+                do zero. O rust-bank faz parte dos meus projetos de
+                aprimoramento no desenvolvimento utilizando Rust em meu tempo
+                livre.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/rust-bank"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/whichmedicine/refs/heads/main/codigo-fonte/assets/logo-flat.png"
+                alt="Which Medicine"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2024-2025</div>
+              <h3>Which Medicine</h3>
+              <p>
+                O Which Medicine é uma
+                <strong>aplicação web frontend</strong> que visa proporcionar o
+                acesso facilitado à informações relevantes sobre
+                <strong>medicamentos</strong> e
+                <strong>interações medicamentosas</strong>, auxiliando na
+                redução de riscos associados à <strong>automedicação</strong>,
+                possibilitando que os usuários possam utilizar os medicamentos
+                com maior segurança. Desenvolvido utilizando
+                <strong>HTML</strong>, <strong>CSS (e Bootstrap)</strong> e
+                <strong>JavaScript</strong>. O Which Medicine foi premiado como
+                <strong>projeto destaque</strong> realizado pelos alunos do
+                curso de graduação em Análise e Desenvolvimento de Sistemas da
+                Pontifícia Universidade Católica de Minas Gerais (PUC Minas), no
+                segundo semestre de 2024.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/whichmedicine"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/agentex86/refs/heads/main/images/logo_200x200.png"
+                alt="Agente x86"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2023-atualmente</div>
+              <h3>Agente x86</h3>
+              <p>
+                O Agente x86 é um blog totalmente desenvolvido do zero
+                utilizando apenas software livre, que trata de tópicos de
+                programação, desenvolvimento de sistemas operacionais, hardware
+                e tecnologia em geral. Desenvolvido utilizando
+                <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>Markdown</strong>, <strong>JavaScript</strong> e
+                <strong>Ruby</strong>. Já os posts são escritos em
+                <strong>Markdown</strong>.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/agentex86"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/java.png" alt="FilmPlay" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2023-2023</div>
+              <h3>FilmPlay</h3>
+              <p>
+                O FilmPlay é um pequeno projeto desenvolvido em
+                <strong>Java</strong> para obter informações de filmes
+                utilizando a API do OMDb. Para obter as informações via
+                solicitação HTTP, o FilmPlay utiliza a biblioteca GSON para
+                serializar e deserializar o JSON enviado como resposta. As
+                bibliotecas e build da aplicação são gerenciados pelo Gradle.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/FilmPlay"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/run-ancient-unix/main/doc/banner.png"
+                alt="Run Ancient UNIX"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2023-atualmente</div>
+              <h3>Run Ancient UNIX</h3>
+              <p>
+                O projeto visa possibilitar a execução (via emulação), de forma
+                fácil e descomplicada, de versões antigas do UNIX para PDP-11,
+                VAX e x86 em hardware moderno, realizando o download e
+                configuração das imagens, bem como a configuração do simulador
+                e/ou gerenciador de máquinas virtuais (qemu). Desenvolvido
+                utilizando <strong>shell script</strong> e
+                <strong>Python</strong>.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/run-ancient-unix"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/markdown.png" alt="cv-exemplo" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2023-2023</div>
+              <h3>cv-exemplo</h3>
+              <p>
+                O projeto visa exemplificar a criação de um currículo legível
+                (para humanos e robôs) em Markdown, além da sua conversão para
+                PDF. Esse formato é útil para oferecer um currículo sucinto, sem
+                distrações e que pode ser processado por mecanismos
+                automatizados de sites de cadastro e análise de currículo.
+                Desenvolvido utilizando <strong>Markdown</strong> e
+                <strong>shell script</strong>.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/cv-exemplo"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/shell.png" alt="freebsd-config" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2022-atualmente</div>
+              <h3>freebsd-config</h3>
+              <p>
+                Projeto responsável por automatizar tarefas ligadas à instalação
+                de pacotes não instalados por padrão em um sistema FreeBSD. O
+                script permite instalar e configurar o servidor Xorg, instalar
+                módulos de kernel das principais placas de vídeo e interfaces de
+                rede, dentre outras funcionalidades. Desenvolvido utilizando
+                <strong>shell script</strong>.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/freebsd-config"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/osdev/refs/heads/main/img/banner.png"
+                alt="osdev-projects"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2022-atualmente</div>
+              <h3>osdev-projects</h3>
+              <p>
+                O projeto documenta uma vasta lista de projetos de sistemas
+                operacionais com código-fonte disponível em repositórios
+                públicos. Também documenta sistemas operacionais históricos,
+                como UNIX, CPM e MS-DOS, reunindo informações, referências,
+                tutoriais de execução e imagens de disco destes sistemas.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/osdev-projects"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/osdev/refs/heads/main/img/banner.png"
+                alt="osdev"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2022-atualmente</div>
+              <h3>osdev</h3>
+              <p>
+                O projeto tem como objetivo reunir, em um único local, uma
+                coletânea de material referente a design e implementação de
+                sistemas operacionais, hardware e programação voltada à
+                desenvolvimento de sistemas operacionais.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/osdev"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/felipenlunkes/Lunix/refs/heads/main/Doc/header.gif"
+                alt="Lunix"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2022-atualmente</div>
+              <h3>Lunix</h3>
+              <p>
+                Lunix é um sistema operacional em estágio inicial de
+                desenvolvimento, escrito em <strong>C</strong> (com componentes
+                escritos em <strong>Assembly x86</strong>) para a arquitetura
+                x86. Possui fins educacionais, auxiliando no aprendizado da
+                linguagem C, de tópicos de hardware e de arquitetura de sistemas
+                operacionais. Possui suporte a initrd (<i>initial ramdisk</i>) e
+                alguns dispositivos.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/Lunix"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/assembly.png" alt="MIPS-asm" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2018-2018</div>
+              <h3>MIPS-asm</h3>
+              <p>
+                Códigos <strong>Assembly MIPS</strong> escritos por mim para a
+                disciplina de Organização de Computadores I (DCC006) do
+                Departamento de Ciências da Computação da Universidade Federal
+                de Minas Gerais (UFMG), em 2018. Os códigos neste repositório
+                podem ser executados com o auxílio do
+                <strong>MARS (MIPS Assembler and Runtime Simulator)</strong>.
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/MIPS-asm"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img
+                src="https://raw.githubusercontent.com/hexagonix/Doc/refs/heads/main/Img/HexagonixMinimalist.png"
+                alt="Hexagonix"
+              />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2014-atualmente</div>
+              <h3>Hexagonix</h3>
+              <p>
+                O Hexagonix é um novo sistema operacional Unix-like, escrito do
+                zero em linguagem
+                <strong>Assembly x86</strong>. Ele é construído sobre o
+                <strong>Hexagon</strong>, um núcleo (kernel) monolítico simples
+                e leve, com suporte a modo protegido (32 bits), interface de
+                dispositivos e sistema de arquivos FAT16 (leitura e escrita).
+                Compatível com hardware antigo (1999 em diante) e atual.
+              </p>
+              <a
+                href="https://github.com/hexagonix"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/linux.png" alt="Netuno S.O" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2011-2018</div>
+              <h3>Netuno S.O</h3>
+              <p>
+                Netuno S.O (Netuno OS) é uma
+                <strong>distribuição Linux autoral</strong> criada à partir dos
+                tutoriais e guias do projeto
+                <strong
+                  ><a
+                    class="timeline-content-link"
+                    href="https://www.linuxfromscratch.org/"
+                    >Linux From Scratch</a
+                  ></strong
+                >. Utiliza um kernel da série 2.6.x e apenas uma interface de
+                linha de comando. Embora não esteja disponível em um repositório
+                no meu GitHub, uma imagem de disco em sua última versão pode ser
+                solicitada.
+              </p>
+              <a
+                href="mailto:felipenldev@gmail.com"
+                target="_blank"
+                class="timeline-btn"
+                >Solicitar</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card-projetos">
+            <div class="timeline-img">
+              <img src="assets/img/assembly.png" alt="Bin S.O" />
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-ano-projeto">2011-2014</div>
+              <h3>Bin S.O</h3>
+              <p>
+                O Bin S.O é um sistema operacional feito como um hobby, para
+                consolidar os estudos realizados em hardware e em
+                <strong>Assembly x86</strong> (16-bit). Ele é um sistema
+                operacional simples, monotarefa e monousuário, composto de uma
+                série de utilitários e um kernel bastante simples, com sistema
+                de arquivos BinFS (desenvolvido para ele).
+              </p>
+              <a
+                href="https://github.com/felipenlunkes/Bin-S.O"
+                target="_blank"
+                class="timeline-btn"
+                >Ver no GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <section id="profissional" class="timeline experiencia-professional">
-        <h2>Minha experiência profissional</h2>
+      <h2>Minha experiência profissional</h2>
 
-        <div id="timeline-experiencias-container" class="timeline-container">
-           
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Orsegups Participações S/A</h3>
-                    <h4>Desenvolvedor backend pleno III</h4>
-                    <div class="timeline-ano">10/2025-atualmente</div>
-                    <p>
-                        Desenvolvimento de soluções escaláveis utilizando, entre outras tecnologias, Java, Spring Framework,
-                        Spring Boot, Rust, Python, APIs RESTful, bancos de dados relacionais (MySQL) e não relacionais (MongoDB),
-                        Docker, Linux, Redis/Valkey, AWS SQS, Amazon S3, RabbitMQ, mensageria com Apache Kafka e Kinesis,
-                        testes unitários e de integração, JavaScript/TypeScript, arquitetura de microsserviços 
-                        e AWS Lambda (serverless).
-                    </p>
-                    <h4>Desenvolvedor backend pleno I</h4>
-                    <div class="timeline-ano">07/2024-10/2025</div>
-                    <p>
-                        Desenvolvimento de soluções escaláveis utilizando, entre outras tecnologias, Java, Spring Framework,
-                        Spring Boot, Rust, Python, APIs RESTful, bancos de dados relacionais (MySQL) e não relacionais (MongoDB),
-                        Docker, Linux, Redis/Valkey, AWS SQS, Amazon S3, RabbitMQ, mensageria com Apache Kafka e Kinesis,
-                        testes unitários e de integração, JavaScript/TypeScript, arquitetura de microsserviços 
-                        e AWS Lambda (serverless).
-                    </p>
-                    <h4>Desenvolvedor backend Jr.</h4>
-                    <div class="timeline-ano">11/2023-06/2024</div>
-                    <p>
-                        Desenvolvimento de soluções escaláveis utilizando, entre outras tecnologias, Java, Spring Framework,
-                        Spring Boot, Rust, Python, APIs RESTful, bancos de dados relacionais (MySQL), Docker, Linux, Redis/Valkey,
-                        AWS SQS, Amazon S3, mensageria com Apache Kafka e Kinesis, testes unitários e de integração,
-                        JavaScript/TypeScript, arquitetura de microsserviços e AWS Lambda (serverless).
-                    </p>
-                    <h4>Desenvolvedor backend trainee</h4>
-                    <div class="timeline-ano">06/2023-10/2023</div>
-                    <p>
-                        Desenvolvimento de soluções escaláveis utilizando, entre outras tecnologias, Java, Spring Framework,
-                        Spring Boot, Rust, Python, APIs RESTful, bancos de dados relacionais (MySQL), Docker, Linux, Redis/Valkey,
-                        AWS SQS, Amazon S3, mensageria com Apache Kafka e Kinesis, testes unitários e de integração, JavaScript/TypeScript,
-                        arquitetura de microsserviços e AWS Lambda (serverless).
-                    </p>
-                </div>
-                </div>
+      <div id="timeline-experiencias-container" class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Orsegups Participações S/A</h3>
+              <h4>Desenvolvedor backend pleno III</h4>
+              <div class="timeline-ano">10/2025-atualmente</div>
+              <p>
+                Desenvolvimento de soluções escaláveis utilizando, entre outras
+                tecnologias, Java, Spring Framework, Spring Boot, Rust, Python,
+                APIs RESTful, bancos de dados relacionais (MySQL) e não
+                relacionais (MongoDB), Docker, Linux, Redis/Valkey, AWS SQS,
+                Amazon S3, RabbitMQ, mensageria com Apache Kafka e Kinesis,
+                testes unitários e de integração, JavaScript/TypeScript,
+                arquitetura de microsserviços e AWS Lambda (serverless).
+              </p>
+              <h4>Desenvolvedor backend pleno I</h4>
+              <div class="timeline-ano">07/2024-10/2025</div>
+              <p>
+                Desenvolvimento de soluções escaláveis utilizando, entre outras
+                tecnologias, Java, Spring Framework, Spring Boot, Rust, Python,
+                APIs RESTful, bancos de dados relacionais (MySQL) e não
+                relacionais (MongoDB), Docker, Linux, Redis/Valkey, AWS SQS,
+                Amazon S3, RabbitMQ, mensageria com Apache Kafka e Kinesis,
+                testes unitários e de integração, JavaScript/TypeScript,
+                arquitetura de microsserviços e AWS Lambda (serverless).
+              </p>
+              <h4>Desenvolvedor backend Jr.</h4>
+              <div class="timeline-ano">11/2023-06/2024</div>
+              <p>
+                Desenvolvimento de soluções escaláveis utilizando, entre outras
+                tecnologias, Java, Spring Framework, Spring Boot, Rust, Python,
+                APIs RESTful, bancos de dados relacionais (MySQL), Docker,
+                Linux, Redis/Valkey, AWS SQS, Amazon S3, mensageria com Apache
+                Kafka e Kinesis, testes unitários e de integração,
+                JavaScript/TypeScript, arquitetura de microsserviços e AWS
+                Lambda (serverless).
+              </p>
+              <h4>Desenvolvedor backend trainee</h4>
+              <div class="timeline-ano">06/2023-10/2023</div>
+              <p>
+                Desenvolvimento de soluções escaláveis utilizando, entre outras
+                tecnologias, Java, Spring Framework, Spring Boot, Rust, Python,
+                APIs RESTful, bancos de dados relacionais (MySQL), Docker,
+                Linux, Redis/Valkey, AWS SQS, Amazon S3, mensageria com Apache
+                Kafka e Kinesis, testes unitários e de integração,
+                JavaScript/TypeScript, arquitetura de microsserviços e AWS
+                Lambda (serverless).
+              </p>
             </div>
-    
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Fundação Oswaldo Cruz (Fiocruz)</h3>
-                    <h4>Estudante de mestrado em Ciências da Saúde</h4>
-                    <div class="timeline-ano">2021-2023</div>
-                    <p>
-                        Mestre em Ciências da Saúde (área de concentração: Biologia Celular e Molecular,
-                        Genética e Bioinformática) pelo Instituto René Rachou (IRR/Fundação Oswaldo Cruz).
-                        Bolsista do CNPq.
-                    </p>
-                    <h4>Bolsista de Iniciação Científica</h3>
-                    <div class="timeline-ano">2016-2020</div>
-                    <p>
-                        De 03/2016 a 11/2020, bolsista de Iniciação Científica no Instituto René Rachou
-                        (IRR)/Fiocruz Minas. Bolsista Fapemig e CNPq.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Pontifícia Universidade Católica de Minas Gerais (PUC Minas)</h3>
-                    <h4>Monitor de Botânica de Algas a Pteridófitas</h4>
-                    <div class="timeline-ano">08/2015-02/2016</div>
-                    <p>
-                        Monitor da disciplina de Botânica de Algas a Pteridófitas, no curso de graduação em Ciências Biológicas
-                        da Pontifícia Universidade Católica de Minas Gerais (PUC Minas).
-                    </p>
-                    <h4>Bolsista de Iniciação à Docência</h4>
-                    <div class="timeline-ano">02/2015-02/2016</div>
-                    <p>
-                        Bolsista de Iniciação à Docência ligado à Pontifícia Universidade Católica de Minas Gerais (PUC Minas)
-                        e atuando na Escola Estadual Ordem e Progresso (Secretaria de Educação e Policia Civil de Minas Gerais),
-                        nos anos do Ensino Médio. Bolsista do CNPq.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Desenvolvedor de software freelancer</h3>
-                    <div class="timeline-ano">03/2013-05/2015</div>
-                    <p>
-                        Desenvolvedor de software freelancer, utilizando as linguagens Java, C e VisualBasic.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Técnico em manutenção de computadores</h3>
-                    <div class="timeline-ano">02/2012-05/2015</div>
-                    <p>
-                        Técnico responsável pela manutenção de computadores de mesa e laptops, atuando como freelancer.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Instrutor de informática</h3>
-                    <div class="timeline-ano">06/2013-05/2014</div>
-                    <p>
-                        Instrutor de informática junto ao programa TELECENTROS.BR, do governo federal. Bolsista do CNPq.
-                    </p>
-                </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Fundação Oswaldo Cruz (Fiocruz)</h3>
+              <h4>Estudante de mestrado em Ciências da Saúde</h4>
+              <div class="timeline-ano">2021-2023</div>
+              <p>
+                Mestre em Ciências da Saúde (área de concentração: Biologia
+                Celular e Molecular, Genética e Bioinformática) pelo Instituto
+                René Rachou (IRR/Fundação Oswaldo Cruz). Bolsista do CNPq.
+              </p>
+              <h4>Bolsista de Iniciação Científica</h4>
+              <div class="timeline-ano">2016-2020</div>
+              <p>
+                De 03/2016 a 11/2020, bolsista de Iniciação Científica no
+                Instituto René Rachou (IRR)/Fiocruz Minas. Bolsista Fapemig e
+                CNPq.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>
+                Pontifícia Universidade Católica de Minas Gerais (PUC Minas)
+              </h3>
+              <h4>Monitor de Botânica de Algas a Pteridófitas</h4>
+              <div class="timeline-ano">08/2015-02/2016</div>
+              <p>
+                Monitor da disciplina de Botânica de Algas a Pteridófitas, no
+                curso de graduação em Ciências Biológicas da Pontifícia
+                Universidade Católica de Minas Gerais (PUC Minas).
+              </p>
+              <h4>Bolsista de Iniciação à Docência</h4>
+              <div class="timeline-ano">02/2015-02/2016</div>
+              <p>
+                Bolsista de Iniciação à Docência ligado à Pontifícia
+                Universidade Católica de Minas Gerais (PUC Minas) e atuando na
+                Escola Estadual Ordem e Progresso (Secretaria de Educação e
+                Policia Civil de Minas Gerais), nos anos do Ensino Médio.
+                Bolsista do CNPq.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Desenvolvedor de software freelancer</h3>
+              <div class="timeline-ano">03/2013-05/2015</div>
+              <p>
+                Desenvolvedor de software freelancer, utilizando as linguagens
+                Java, C e VisualBasic.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Técnico em manutenção de computadores</h3>
+              <div class="timeline-ano">02/2012-05/2015</div>
+              <p>
+                Técnico responsável pela manutenção de computadores de mesa e
+                laptops, atuando como freelancer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Instrutor de informática</h3>
+              <div class="timeline-ano">06/2013-05/2014</div>
+              <p>
+                Instrutor de informática junto ao programa TELECENTROS.BR, do
+                governo federal. Bolsista do CNPq.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <section id="formacao" class="timeline formacao-academica">
-        <h2>Minha formação acadêmica</h2>
-        <div class="timeline-container">
-          
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
-                    <h4>Pontifĩcia Universidade Católica de Minas Gerais (PUC Minas)</h4>
-                    <div class="timeline-ano">2024-2027</div>
-                    <p>
-                        Graduação em andamento em Análise e Desenvolvimento de Sistemas (ADS) na Pontifícia
-                        Universidade Católica de Minas Gerais (PUC Minas). Desenvolvimento de projetos utilizando,
-                        entre outras tecnologias, <strong>C#</strong> (ASP.NET e Entity Framework),
-                        <strong>JavaScript/TypeScript</strong>, <strong>Angular</strong>, <strong>React Native</strong>,
-                        <strong>HTML</strong>, <strong>CSS</strong>, <strong>bancos de dados relacionais</strong> (MySQL e SQL Server),
-                        <strong>Azure</strong>, <strong>APIs RESTful</strong> e <strong>Figma</strong>.
-                    </p>
-                </div>
-                </div>
+      <h2>Minha formação acadêmica</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+              <h4>
+                Pontifĩcia Universidade Católica de Minas Gerais (PUC Minas)
+              </h4>
+              <div class="timeline-ano">2024-2027</div>
+              <p>
+                Graduação em andamento em Análise e Desenvolvimento de Sistemas
+                (ADS) na Pontifícia Universidade Católica de Minas Gerais (PUC
+                Minas). Desenvolvimento de projetos utilizando, entre outras
+                tecnologias, <strong>C#</strong> (ASP.NET e Entity Framework),
+                <strong>JavaScript/TypeScript</strong>,
+                <strong>Angular</strong>, <strong>React Native</strong>,
+                <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>bancos de dados relacionais</strong> (MySQL e SQL
+                Server), <strong>Azure</strong>, <strong>APIs RESTful</strong> e
+                <strong>Figma</strong>.
+              </p>
             </div>
-    
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Mestrado em Ciências da Saúde</h3>
-                    <h4>Fundação Oswaldo Cruz (Fiocruz)</h4>
-                    <div class="timeline-ano">2021-2023</div>
-                    <p>
-                        Mestre em Ciências da Saúde (área de concentração: Biologia Celular e Molecular, Genética e
-                        Bioinformática) pelo Instituto René Rachou (IRR/Fundação Oswaldo Cruz).
-                        Minha dissertação de mestrado tratou da caracterização funcional de uma família de proteases
-                        de <i>Schistosoma mansoni</i> através de silenciamento gênico por RNA de interferência (RNAi),
-                        em busca de um novo alvo terapêutico para o tratamento da esquistossomose.
-                        <strong>Primeiro colocado no processo seletivo da 1ª entrada de 2021 do programa</strong>.
-                        Bolsista de mestrado do CNPq.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Bacharelado em Ciências Biológicas</h3>
-                    <h4>Universidade Federal de Minas Gerais (UFMG)</h4>
-                    <div class="timeline-ano">2016-2020</div>
-                    <p>
-                        Graduação em Ciências Biológicas (bacharelado) com ênfase em Biotecnologia
-                        e Saúde pela <strong>Universidade Federal de Minas Gerais</strong> (UFMG), com foco nas áreas
-                        de Bioquímica e Imunologia (Biologia Molecular). Minha monografia tratou da 
-                        caracterização funcional de uma família de proteases de <i>Schistosoma mansoni</i>
-                        através de silenciamento gênico por RNA de interferência (RNAi). Durante 
-                        minha graduação, me aprofundei nas áreas de Bioquímica, Imunologia, 
-                        Parasitologia e Microbiologia.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-card">
-                    <div class="timeline-content">
-                    <h3>Curso técnico integrado em informática</h3>
-                    <h4>Escola Técnica Vital Brasil</h4>
-                    <div class="timeline-ano">2011-2013</div>
-                    <p>
-                        Curso técnico integrado em informática pela <strong>Escola Técnica Vital Brasil</strong>
-                        (unidade da Polimig - <strong>Escola Politécnica de Minas Gerais</strong>), onde me familiarizei 
-                        com noções de lógica de programação, C, Java, Pascal, Delphi, Visual Basic, hardware, robótica, 
-                        desenvolvimento web, bancos de dados relacionais e SQL, análise de sistemas e empreendedorismo. 
-                        Durante meu curso técnico/ensino médio, atuei como instrutor de informática e democratização
-                        da tecnologia, junto ao programa do governo federal Telecentros.BR. 
-                    </p>
-                </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Mestrado em Ciências da Saúde</h3>
+              <h4>Fundação Oswaldo Cruz (Fiocruz)</h4>
+              <div class="timeline-ano">2021-2023</div>
+              <p>
+                Mestre em Ciências da Saúde (área de concentração: Biologia
+                Celular e Molecular, Genética e Bioinformática) pelo Instituto
+                René Rachou (IRR/Fundação Oswaldo Cruz). Minha dissertação de
+                mestrado tratou da caracterização funcional de uma família de
+                proteases de <i>Schistosoma mansoni</i> através de silenciamento
+                gênico por RNA de interferência (RNAi), em busca de um novo alvo
+                terapêutico para o tratamento da esquistossomose.
+                <strong
+                  >Primeiro colocado no processo seletivo da 1ª entrada de 2021
+                  do programa</strong
+                >. Bolsista de mestrado do CNPq.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Bacharelado em Ciências Biológicas</h3>
+              <h4>Universidade Federal de Minas Gerais (UFMG)</h4>
+              <div class="timeline-ano">2016-2020</div>
+              <p>
+                Graduação em Ciências Biológicas (bacharelado) com ênfase em
+                Biotecnologia e Saúde pela
+                <strong>Universidade Federal de Minas Gerais</strong> (UFMG),
+                com foco nas áreas de Bioquímica e Imunologia (Biologia
+                Molecular). Minha monografia tratou da caracterização funcional
+                de uma família de proteases de <i>Schistosoma mansoni</i>
+                através de silenciamento gênico por RNA de interferência (RNAi).
+                Durante minha graduação, me aprofundei nas áreas de Bioquímica,
+                Imunologia, Parasitologia e Microbiologia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-content">
+              <h3>Curso técnico integrado em informática</h3>
+              <h4>Escola Técnica Vital Brasil</h4>
+              <div class="timeline-ano">2011-2013</div>
+              <p>
+                Curso técnico integrado em informática pela
+                <strong>Escola Técnica Vital Brasil</strong> (unidade da Polimig
+                - <strong>Escola Politécnica de Minas Gerais</strong>), onde me
+                familiarizei com noções de lógica de programação, C, Java,
+                Pascal, Delphi, Visual Basic, hardware, robótica,
+                desenvolvimento web, bancos de dados relacionais e SQL, análise
+                de sistemas e empreendedorismo. Durante meu curso técnico/ensino
+                médio, atuei como instrutor de informática e democratização da
+                tecnologia, junto ao programa do governo federal Telecentros.BR.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Fim da linha do tempo-->
 
     <section id="contato" class="section">
+      <h2>Contato e portfólio</h2>
+      <div class="social-links">
+        <a href="https://github.com/felipenlunkes" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
 
-        <h2>Contato e portfólio</h2>
-        <div class="social-links">
+        <a href="https://www.linkedin.com/in/felipelunkes" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
 
-            <a href="https://github.com/felipenlunkes" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+        <a href="https://bsky.app/profile/lunx.me" target="_blank">
+          <i class="fa-brands fa-bluesky"></i>
+        </a>
 
-            <a href="https://www.linkedin.com/in/felipelunkes" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
+        <a href="https://www.threads.net/@lunx8086" target="_blank">
+          <i class="fa-brands fa-threads"></i>
+        </a>
 
-            <a href="https://bsky.app/profile/lunx.me" target="_blank">
-                <i class="fa-brands fa-bluesky"></i>
-            </a>
+        <a href="https://x.com/lunx8086" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
 
-            <a href="https://www.threads.net/@lunx8086" target="_blank">
-                <i class="fa-brands fa-threads"></i>
-            </a>
+        <a href="https://www.instagram.com/lunx8086" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
 
-            <a href="https://x.com/lunx8086" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
-            </a>
+        <a href="http://discordapp.com/users/lunx8086" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+        </a>
 
-            <a href="https://www.instagram.com/lunx8086" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="http://discordapp.com/users/lunx8086" target="_blank">
-                <i class="fa-brands fa-discord"></i>
-            </a>
-
-            <a href="mailto:felipenldev@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-
-        </div>
-
+        <a href="mailto:felipenldev@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
     </section>
 
     <footer>
-        <p>© 2024-2026 Felipe Lunkes. Todos os direitos reservados.</p>
+      <p>© 2024-2026 Felipe Lunkes. Todos os direitos reservados.</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
