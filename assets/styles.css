@@ -283,17 +283,21 @@ nav ul li a {
   border: 1px solid #ddd;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: justify;
   word-wrap: break-word;
   border-radius: 10px;
   display: flex;
   flex-direction: column; /* Texto em cima, botão em baixo */
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .projeto-item:hover {
-  transform: scale(1.05);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+  z-index: 2;
 }
 
 .projeto-item img {
@@ -474,7 +478,7 @@ nav ul li a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative; /* Necessário para posicionar a linha vertical */
   z-index: 10; /* Mantém os cards sobre a linha de conexão */
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .timeline-card-projetos {
@@ -490,7 +494,7 @@ nav ul li a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative; /* Necessário para posicionar a linha vertical */
   z-index: 10; /* Mantém os cards sobre a linha de conexão */
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .timeline-card-projetos::before {
@@ -565,11 +569,15 @@ nav ul li a {
 }
 
 .timeline-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+  z-index: 20;
 }
 
 .timeline-card-projetos:hover {
-  transform: scale(1.05);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+  z-index: 20;
 }
 
 /* Linha de conexão */
