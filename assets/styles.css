@@ -552,6 +552,26 @@ nav ul li a {
   user-select: none;
 }
 
+.timeline .timeline-competencias {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.timeline-competencias strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.timeline-competencia {
+  color: #bd8735;
+}
+
+.timeline-cargo-divider {
+  border: none;
+  border-top: 1px solid #bd8735;
+  margin: 20px 40px;
+}
+
 .timeline-btn {
   display: inline-block;
   margin-top: 10px;
