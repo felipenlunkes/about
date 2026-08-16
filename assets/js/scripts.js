@@ -116,6 +116,27 @@ function escolherIdioma(lang) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.cargo-descricao').forEach(function (descricao) {
+        const botao = descricao.nextElementSibling;
+        if (!botao || !botao.classList.contains('cargo-toggle')) return;
+
+        if (descricao.scrollHeight <= descricao.clientHeight + 1) {
+            descricao.classList.add('sem-recorte');
+            botao.style.display = 'none';
+        }
+    });
+});
+
+function alternarCargo(botao) {
+    const descricao = botao.previousElementSibling;
+    const aberto = descricao.classList.toggle('open');
+
+    descricao.style.maxHeight = aberto ? descricao.scrollHeight + 'px' : '';
+    botao.textContent = aberto ? botao.dataset.less : botao.dataset.more;
+    botao.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+}
+
 function exibirSecao() {
     const btnToggleProjetos = document.querySelector(".toggle-btn");
     const timelineProjetosContainer = document.querySelector("#timeline-projetos-container-cl");
@@ -140,20 +161,74 @@ function exibirSecao() {
 };
   
 document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('header nav');
+    const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('a');
-    
+
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             // Verificar se o link é uma âncora dentro da mesma página
             if (this.getAttribute('href').startsWith('#')) {
                 e.preventDefault();
                 const targetSection = document.querySelector(this.getAttribute('href'));
+                const navHeight = nav ? nav.offsetHeight : 0;
                 window.scrollTo({
-                    top: targetSection.offsetTop,
+                    top: targetSection.offsetTop - navHeight,
                     behavior: 'smooth'
                 });
+                fecharMenu();
             }
         });
+    });
+
+    function fecharMenu() {
+        const navToggle = document.getElementById('navToggle');
+        if (navMenu && navMenu.classList.contains('nav-open')) {
+            navMenu.classList.remove('nav-open');
+            if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+});
+
+// Menu hambúrguer (mobile)
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (!navToggle || !navMenu) return;
+
+    navToggle.addEventListener('click', function() {
+        const isOpen = navMenu.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!navMenu.classList.contains('nav-open')) return;
+        if (navMenu.contains(e.target) || navToggle.contains(e.target)) return;
+        navMenu.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+    });
+});
+
+// Revelar seções e cards ao rolar a página
+document.addEventListener('DOMContentLoaded', function() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion || !('IntersectionObserver' in window)) return;
+
+    const alvos = document.querySelectorAll('.timeline-item, .projeto-item');
+
+    const observer = new IntersectionObserver(function(entries, obs) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('js-reveal-visible');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+
+    alvos.forEach(el => {
+        el.classList.add('js-reveal');
+        observer.observe(el);
     });
 });
 

@@ -19,7 +19,17 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <a class="nav-brand" href="#about">Felipe Lunkes</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
           <li><a href="#about">About me</a></li>
           <li><a href="#blog">Agent x86</a></li>
           <li><a href="#projeto">Featured Projects</a></li>
@@ -30,7 +40,7 @@
 
       <div class="hero">
         <h1>Felipe Lunkes</h1>
-        <p>Backend Developer</p>
+        <p>Senior Backend Developer</p>
       </div>
     </header>
 
@@ -50,53 +60,36 @@
           </div>
 
           <p>
-            I am a <strong>senior backend developer</strong> and hold the
-            position of <strong>Lead Integration Engineer</strong>, focusing on
-            architectural decisions (alongside the software architect) and
-            defining technologies for the development of solutions that
-            integrate platforms and devices. Additionally, I provide technical
-            mentorship to developers. I have experience developing solutions
-            using <strong>Java</strong> (Spring Framework, Spring Boot and
-            Netty), <strong>C#</strong> (ASP.NET and Entity Framework),
-            <strong>Rust</strong>, and <strong>Python</strong>. I work on
-            building <strong>scalable</strong> applications, focusing on
-            <strong>event-driven microservices architecture</strong>, using
-            <strong>RESTful APIs</strong>,
-            <strong>asynchronous event-driven network communication</strong>,
-            <strong>Temporal.io</strong> framework,
-            <strong>relational databases</strong> (MySQL) and
-            <strong>non-relational databases</strong> (MongoDB),
-            <strong>Redis/Valkey</strong>, <strong>Caffeine</strong>,
-            <strong>MQTT</strong>, <strong>RabbitMQ</strong>, messaging with
-            <strong>Apache Kafka</strong> and <strong>Kinesis</strong>, as well
-            as <strong>AWS services</strong> (Lambda, S3, and SQS) and
-            <strong>Docker</strong>. I also have extensive practice in
-            <strong>unit and integration testing</strong>.
+            I'm a <strong>senior backend developer</strong> and hold the
+            position of
+            <strong>leader of the integration engineering team</strong>
+            <i>(Lead Integration Engineer)</i>. Throughout my career, I've
+            worked on both <strong>business applications</strong>, with core
+            product features, and <strong>integration applications</strong>,
+            responsible for communication with devices and external systems.
           </p>
           <p>
-            I have solid experience in different languages and ecosystems,
-            including <strong>Java</strong>, <strong>C#</strong>,
-            <strong>Rust</strong>, <strong>Python</strong>, <strong>C</strong>,
-            <strong>x86 Assembly</strong>, and <strong>shell scripts</strong>,
-            as well as practical experience with
-            <strong>JavaScript/TypeScript</strong>, <strong>HTML</strong>, and
-            <strong>CSS</strong>. I'm constantly evolving technically, with
-            <strong>recent focus on Rust</strong>.
+            I'm responsible for developing and maintaining applications used
+            daily by thousands of users and devices simultaneously. I'm involved
+            in the constant improvement of the platform and in mentoring
+            developers.
           </p>
-          <br />
           <p>
-            I'm an enthusiast of low-level programming (x86 Assembly) and
+            I'm an enthusiast of low level programming (x86 Assembly) and
             interested in operating system design and implementation. In my free
             time, you might find me gaming, studying, reading, programming in
             x86 Assembly, or venturing into Rust. Additionally, I develop an
-            operating system completely written in x86 Assembly, which can be
-            found in my project <a href="#timeline"><strong>Timeline</strong></a
+            operating system written entirely in x86 Assembly, which you can
+            find on my project
+            <a href="#timeline"><strong>Timeline</strong></a
             >.
           </p>
-          <br />
           <p>
-            Feel free to <a href="#contact"><strong>contact me</strong></a> and
-            learn more about me!
+            Want to know more about my journey? Check out my full
+            <a href="#profissional"><strong>professional experience</strong></a>
+            or
+            <a href="#contact"><strong>get in touch</strong></a
+            >!
           </p>
           <a href="https://cv.lunx.me/en" target="_blank" class="cv-link"
             >My resume</a
@@ -220,8 +213,6 @@
           >
         </div>
       </div>
-
-      <button id="top-btn" class="top-btn" onclick="voltarAoTopo()">⬆</button>
     </section>
 
     <!-- Timeline here-->
@@ -261,25 +252,37 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2026-2026</div>
               <h3>EloCampo</h3>
-              <p>
-                EloCampo is a distributed agricultural marketplace. EloCampo
-                connects rural producers (family farming and urban gardens)
-                directly to consumers, eliminating middlemen from the
-                commercialization chain. The platform is made up of 8
-                <strong>microservices</strong> built with
-                <strong>Java 25</strong> and <strong>Spring Boot 4</strong>,
-                orchestrated by a custom <strong>API Gateway</strong>
-                (EloGateway), which centralizes JWT authentication and routes
-                requests between applications. Persistence is handled by a
-                <strong>NoSQL</strong> database (MongoDB). On the user side,
-                there is a <strong>Web application</strong> built with
-                <strong>React 18</strong> (using Vite), and an
-                <strong>Android</strong> mobile app built with
-                <strong>React Native</strong> (using Expo). Other tools were
-                also used, such as <strong>Docker</strong>. The backend was
-                deployed on <strong>Azure</strong>. In this project, I acted as
-                the <strong>software architect</strong>.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  EloCampo is a distributed agricultural marketplace. EloCampo
+                  connects rural producers (family farming and urban gardens)
+                  directly to consumers, eliminating middlemen from the
+                  commercialization chain. The platform is made up of 8
+                  <strong>microservices</strong> built with
+                  <strong>Java 25</strong> and <strong>Spring Boot 4</strong>,
+                  orchestrated by a custom
+                  <strong>API Gateway</strong> (EloGateway), which centralizes
+                  JWT authentication and routes requests between applications.
+                  Persistence is handled by a <strong>NoSQL</strong> database
+                  (MongoDB). On the user side, there is a
+                  <strong>Web application</strong> built with
+                  <strong>React 18</strong> (using Vite), and an
+                  <strong>Android</strong> mobile app built with
+                  <strong>React Native</strong> (using Expo). Other tools were
+                  also used, such as <strong>Docker</strong>. The backend was
+                  deployed on <strong>Azure</strong>. In this project, I acted
+                  as the <strong>software architect</strong>.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/EloCampo"
                 target="_blank"
@@ -298,18 +301,30 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2026–present</div>
               <h3>Gamer Monitor</h3>
-              <p>
-                Gamer Monitor is a
-                <strong>real-time performance monitor</strong> for Linux built
-                in <strong>Rust</strong> using <strong>GTK4</strong>. The goal
-                of this project is to provide a simple, lightweight, and
-                intuitive tool that displays device resource usage, such as
-                workload and component temperatures. Gamer Monitor aggregates
-                usage and information about the processor, RAM memory, storage
-                (NVMe only), and graphics card. It is optimized for
-                <strong>AMD Radeon</strong> and <strong>NVIDIA</strong> graphics
-                cards. There are plans to support Intel Arc GPUs.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Gamer Monitor is a
+                  <strong>real-time performance monitor</strong> for Linux built
+                  in <strong>Rust</strong> using <strong>GTK4</strong>. The goal
+                  of this project is to provide a simple, lightweight, and
+                  intuitive tool that displays device resource usage, such as
+                  workload and component temperatures. Gamer Monitor aggregates
+                  usage and information about the processor, RAM memory, storage
+                  (NVMe only), and graphics card. It is optimized for
+                  <strong>AMD Radeon</strong> and
+                  <strong>NVIDIA</strong> graphics cards. There are plans to
+                  support Intel Arc GPUs.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/gamer-monitor"
                 target="_blank"
@@ -331,13 +346,24 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2025-present</div>
               <h3>DoeTech Mobile</h3>
-              <p>
-                DoeTech Mobile is the new iteration of DoeTech, a project that
-                can be found below. Developed in <strong>C#</strong> and
-                <strong>React Native</strong>, it implements the same backend as
-                DoeTech, only replacing the <strong>MySQL</strong> database with
-                a <strong>PostgreSQL</strong> one.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  DoeTech Mobile is the new iteration of DoeTech, a project that
+                  can be found below. Developed in <strong>C#</strong> and
+                  <strong>React Native</strong>, it implements the same backend
+                  as DoeTech, only replacing the <strong>MySQL</strong> database
+                  with a <strong>PostgreSQL</strong> one.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/doetech-mobile"
                 target="_blank"
@@ -359,55 +385,66 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2025-present</div>
               <h3>DoeTech</h3>
-              <p>
-                DoeTech is a platform that aims to create an interface between
-                companies and individuals interested in donating electronic
-                equipment that would be discarded, and social institutions or
-                people in need who wish to receive this type of equipment. The
-                proposal of DoeTech is to reduce the production of electronic
-                waste while favoring the reuse of electronic equipment by social
-                institutions and low-income people. Developed in
-                <strong>C#</strong> and <strong>Angular</strong>, using
-                <strong
-                  ><a
-                    class="timeline-content-link"
-                    href="https://learn.microsoft.com/en-us/ef/"
-                    >Entity Framework</a
-                  ></strong
-                >
-                and
-                <strong
-                  ><a
-                    class="timeline-content-link"
-                    href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc"
-                    >ASP.NET MVC</a
-                  ></strong
-                >, it implements a clean architecture on top of the MVC model
-                (<strong>MVC + Services + Repositories</strong>). It also
-                implements a <strong>MySQL</strong> database, as well as support
-                for storing images and documents using
-                <strong
-                  ><a
-                    class="timeline-content-link"
-                    href="https://azure.microsoft.com/pt-br/products/storage/blobs"
-                    >Azure Blobs Storage</a
-                  ></strong
-                >. Supports authentication via JWT (Web Token), sending
-                notifications and emails, and password recovery on demand.
-                Tested and validated on
-                <strong
-                  ><a
-                    class="timeline-content-link"
-                    href="https://azure.microsoft.com/pt-br/"
-                    >Azure</a
-                  ></strong
-                >
-                hosting. DoeTech was awarded as an
-                <strong>outstanding project</strong> carried out by students of
-                the Systems Analysis and Development undergraduate course at the
-                Pontifical Catholic University of Minas Gerais (PUC Minas), in
-                the first semester of 2025.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  DoeTech is a platform that aims to create an interface between
+                  companies and individuals interested in donating electronic
+                  equipment that would be discarded, and social institutions or
+                  people in need who wish to receive this type of equipment. The
+                  proposal of DoeTech is to reduce the production of electronic
+                  waste while favoring the reuse of electronic equipment by
+                  social institutions and low-income people. Developed in
+                  <strong>C#</strong> and <strong>Angular</strong>, using
+                  <strong
+                    ><a
+                      class="timeline-content-link"
+                      href="https://learn.microsoft.com/en-us/ef/"
+                      >Entity Framework</a
+                    ></strong
+                  >
+                  and
+                  <strong
+                    ><a
+                      class="timeline-content-link"
+                      href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc"
+                      >ASP.NET MVC</a
+                    ></strong
+                  >, it implements a clean architecture on top of the MVC model
+                  (<strong>MVC + Services + Repositories</strong>). It also
+                  implements a <strong>MySQL</strong> database, as well as
+                  support for storing images and documents using
+                  <strong
+                    ><a
+                      class="timeline-content-link"
+                      href="https://azure.microsoft.com/pt-br/products/storage/blobs"
+                      >Azure Blobs Storage</a
+                    ></strong
+                  >. Supports authentication via JWT (Web Token), sending
+                  notifications and emails, and password recovery on demand.
+                  Tested and validated on
+                  <strong
+                    ><a
+                      class="timeline-content-link"
+                      href="https://azure.microsoft.com/pt-br/"
+                      >Azure</a
+                    ></strong
+                  >
+                  hosting. DoeTech was awarded as an
+                  <strong>outstanding project</strong> carried out by students
+                  of the Systems Analysis and Development undergraduate course
+                  at the Pontifical Catholic University of Minas Gerais (PUC
+                  Minas), in the first semester of 2025.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/DoeTech"
                 target="_blank"
@@ -426,31 +463,43 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2025-2025</div>
               <h3>POC-CRUD-csharp</h3>
-              <p>
-                POC-CRUD-csharp is a proof of concept backend application
-                developed in <strong>C#</strong> that implements data access and
-                manipulation in a <strong>MySQL</strong> database. Using
-                <strong
-                  ><a
-                    class="timeline-content-link"
-                    href="https://learn.microsoft.com/en-us/ef/"
-                    >Entity Framework</a
-                  ></strong
-                >
-                and
-                <strong
-                  ><a
-                    class="timeline-content-link"
-                    href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc"
-                    >ASP.NET MVC</a
-                  ></strong
-                >, it implements a clean architecture on top of the MVC model
-                (<strong>MVC + Services + Repositories</strong>), with automatic
-                dependency injection via IService and IRepository interfaces
-                created for the project, exception mapping to appropriate HTTP
-                responses, and authentication via JWT (Web Token). This project
-                will be used in future implementations as a model.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  POC-CRUD-csharp is a proof of concept backend application
+                  developed in <strong>C#</strong> that implements data access
+                  and manipulation in a <strong>MySQL</strong> database. Using
+                  <strong
+                    ><a
+                      class="timeline-content-link"
+                      href="https://learn.microsoft.com/en-us/ef/"
+                      >Entity Framework</a
+                    ></strong
+                  >
+                  and
+                  <strong
+                    ><a
+                      class="timeline-content-link"
+                      href="https://dotnet.microsoft.com/en-us/apps/aspnet/mvc"
+                      >ASP.NET MVC</a
+                    ></strong
+                  >, it implements a clean architecture on top of the MVC model
+                  (<strong>MVC + Services + Repositories</strong>), with
+                  automatic dependency injection via IService and IRepository
+                  interfaces created for the project, exception mapping to
+                  appropriate HTTP responses, and authentication via JWT (Web
+                  Token). This project will be used in future implementations as
+                  a model.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/poc-crud-csharp"
                 target="_blank"
@@ -469,14 +518,26 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2025-present</div>
               <h3>rust-bank</h3>
-              <p>
-                rust-bank is an application that aims to experiment with some
-                particularities of development using the
-                <strong>Rust</strong> language, such as borrowing, modules,
-                crates, macros, etc. The application simulates banking
-                operations and was developed from scratch. rust-bank is part of
-                my improvement projects in Rust development in my free time.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  rust-bank is an application that aims to experiment with some
+                  particularities of development using the
+                  <strong>Rust</strong> language, such as borrowing, modules,
+                  crates, macros, etc. The application simulates banking
+                  operations and was developed from scratch. rust-bank is part
+                  of my improvement projects in Rust development in my free
+                  time.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/rust-bank"
                 target="_blank"
@@ -498,21 +559,32 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2024-2025</div>
               <h3>Which Medicine</h3>
-              <p>
-                Which Medicine is a
-                <strong>frontend web application</strong> that aims to provide
-                easy access to relevant information about
-                <strong>medicines</strong> and
-                <strong>drug interactions</strong>, helping to reduce risks
-                associated with <strong>self-medication</strong>, enabling users
-                to use medicines more safely. Developed using
-                <strong>HTML</strong>, <strong>CSS (and Bootstrap)</strong>, and
-                <strong>JavaScript</strong>. Which Medicine was awarded as an
-                <strong>outstanding project</strong> carried out by students of
-                the Systems Analysis and Development undergraduate course at the
-                Pontifical Catholic University of Minas Gerais (PUC Minas), in
-                the second semester of 2024.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Which Medicine is a
+                  <strong>frontend web application</strong> that aims to provide
+                  easy access to relevant information about
+                  <strong>medicines</strong> and
+                  <strong>drug interactions</strong>, helping to reduce risks
+                  associated with <strong>self-medication</strong>, enabling
+                  users to use medicines more safely. Developed using
+                  <strong>HTML</strong>, <strong>CSS (and Bootstrap)</strong>,
+                  and <strong>JavaScript</strong>. Which Medicine was awarded as
+                  an <strong>outstanding project</strong> carried out by
+                  students of the Systems Analysis and Development undergraduate
+                  course at the Pontifical Catholic University of Minas Gerais
+                  (PUC Minas), in the second semester of 2024.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/whichmedicine"
                 target="_blank"
@@ -534,15 +606,26 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2023-present</div>
               <h3>Agent x86</h3>
-              <p>
-                Agent x86 is a blog entirely developed from scratch using only
-                free software, covering topics of programming, operating system
-                development, hardware, and technology in general. Developed
-                using <strong>HTML</strong>, <strong>CSS</strong>,
-                <strong>Markdown</strong>, <strong>JavaScript</strong>, and
-                <strong>Ruby</strong>. Posts are written in
-                <strong>Markdown</strong>.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Agent x86 is a blog entirely developed from scratch using only
+                  free software, covering topics of programming, operating
+                  system development, hardware, and technology in general.
+                  Developed using <strong>HTML</strong>, <strong>CSS</strong>,
+                  <strong>Markdown</strong>, <strong>JavaScript</strong>, and
+                  <strong>Ruby</strong>. Posts are written in
+                  <strong>Markdown</strong>.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/agentex86"
                 target="_blank"
@@ -561,14 +644,25 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2023-2023</div>
               <h3>FilmPlay</h3>
-              <p>
-                FilmPlay is a small project developed in
-                <strong>Java</strong> to obtain movie information using the OMDb
-                API. To obtain information via HTTP request, FilmPlay uses the
-                GSON library to serialize and deserialize the JSON sent as a
-                response. Libraries and build of the application are managed by
-                Gradle.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  FilmPlay is a small project developed in
+                  <strong>Java</strong> to obtain movie information using the
+                  OMDb API. To obtain information via HTTP request, FilmPlay
+                  uses the GSON library to serialize and deserialize the JSON
+                  sent as a response. Libraries and build of the application are
+                  managed by Gradle.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/FilmPlay"
                 target="_blank"
@@ -590,14 +684,26 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2023-present</div>
               <h3>Run Ancient UNIX</h3>
-              <p>
-                The project aims to enable the execution (via emulation), in an
-                easy and uncomplicated way, of old UNIX versions for PDP-11,
-                VAX, and x86 on modern hardware, performing the download and
-                configuration of images, as well as the configuration of the
-                simulator and/or virtual machine manager (qemu). Developed using
-                <strong>shell script</strong> and <strong>Python</strong>.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  The project aims to enable the execution (via emulation), in
+                  an easy and uncomplicated way, of old UNIX versions for
+                  PDP-11, VAX, and x86 on modern hardware, performing the
+                  download and configuration of images, as well as the
+                  configuration of the simulator and/or virtual machine manager
+                  (qemu). Developed using
+                  <strong>shell script</strong> and <strong>Python</strong>.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/run-ancient-unix"
                 target="_blank"
@@ -616,15 +722,26 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2023-2023</div>
               <h3>cv-exemplo</h3>
-              <p>
-                The project aims to exemplify the creation of a readable resume
-                (for humans and robots) in Markdown, as well as its conversion
-                to PDF. This format is useful for offering a succinct resume,
-                without distractions and that can be processed by automated
-                mechanisms of registration sites and resume analysis. Developed
-                using <strong>Markdown</strong> and
-                <strong>shell script</strong>.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  The project aims to exemplify the creation of a readable
+                  resume (for humans and robots) in Markdown, as well as its
+                  conversion to PDF. This format is useful for offering a
+                  succinct resume, without distractions and that can be
+                  processed by automated mechanisms of registration sites and
+                  resume analysis. Developed using <strong>Markdown</strong> and
+                  <strong>shell script</strong>.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/cv-exemplo"
                 target="_blank"
@@ -643,14 +760,26 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2022-present</div>
               <h3>freebsd-config</h3>
-              <p>
-                Project responsible for automating tasks related to the
-                installation of packages not installed by default in a FreeBSD
-                system. The script allows installing and configuring the Xorg
-                server, installing kernel modules of the main video cards and
-                network interfaces, among other functionalities. Developed using
-                <strong>shell script</strong>.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Project responsible for automating tasks related to the
+                  installation of packages not installed by default in a FreeBSD
+                  system. The script allows installing and configuring the Xorg
+                  server, installing kernel modules of the main video cards and
+                  network interfaces, among other functionalities. Developed
+                  using
+                  <strong>shell script</strong>.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/freebsd-config"
                 target="_blank"
@@ -672,13 +801,24 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2022-present</div>
               <h3>osdev-projects</h3>
-              <p>
-                The project documents a vast list of operating system projects
-                with source code available in public repositories. It also
-                documents historical operating systems such as UNIX, CPM, and
-                MS-DOS, gathering information, references, execution tutorials,
-                and disk images of these systems.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  The project documents a vast list of operating system projects
+                  with source code available in public repositories. It also
+                  documents historical operating systems such as UNIX, CPM, and
+                  MS-DOS, gathering information, references, execution
+                  tutorials, and disk images of these systems.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/osdev-projects"
                 target="_blank"
@@ -700,12 +840,23 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2022-present</div>
               <h3>osdev</h3>
-              <p>
-                The project aims to gather, in a single location, a collection
-                of material regarding the design and implementation of operating
-                systems, hardware, and programming aimed at operating system
-                development.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  The project aims to gather, in a single location, a collection
+                  of material regarding the design and implementation of
+                  operating systems, hardware, and programming aimed at
+                  operating system development.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/osdev"
                 target="_blank"
@@ -727,14 +878,25 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2022-present</div>
               <h3>Lunix</h3>
-              <p>
-                Lunix is an operating system in early stages of development,
-                written in <strong>C</strong> (with components written in
-                <strong>x86 Assembly</strong>) for the x86 architecture. It has
-                educational purposes, helping in learning the C language,
-                hardware topics, and operating system architecture. It has
-                support for initrd (<i>initial ramdisk</i>) and some devices.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Lunix is an operating system in early stages of development,
+                  written in <strong>C</strong> (with components written in
+                  <strong>x86 Assembly</strong>) for the x86 architecture. It
+                  has educational purposes, helping in learning the C language,
+                  hardware topics, and operating system architecture. It has
+                  support for initrd (<i>initial ramdisk</i>) and some devices.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/Lunix"
                 target="_blank"
@@ -753,13 +915,25 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2018-2018</div>
               <h3>MIPS-asm</h3>
-              <p>
-                <strong>MIPS Assembly</strong> codes written by me for the
-                Computer Organization I course (DCC006) of the Computer Science
-                Department of the Federal University of Minas Gerais (UFMG), in
-                2018. The codes in this repository can be executed with the help
-                of <strong>MARS (MIPS Assembler and Runtime Simulator)</strong>.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  <strong>MIPS Assembly</strong> codes written by me for the
+                  Computer Organization I course (DCC006) of the Computer
+                  Science Department of the Federal University of Minas Gerais
+                  (UFMG), in 2018. The codes in this repository can be executed
+                  with the help of
+                  <strong>MARS (MIPS Assembler and Runtime Simulator)</strong>.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/MIPS-asm"
                 target="_blank"
@@ -781,15 +955,26 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2014-present</div>
               <h3>Hexagonix</h3>
-              <p>
-                Hexagonix is a new Unix-like operating system, written from
-                scratch in
-                <strong>x86 Assembly</strong> language. It is built on top of
-                <strong>Hexagon</strong>, a simple and lightweight monolithic
-                kernel with support for protected mode (32-bit), device
-                interface, and FAT16 file system (read and write). Compatible
-                with old hardware (1999 onwards) and current.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Hexagonix is a new Unix-like operating system, written from
+                  scratch in
+                  <strong>x86 Assembly</strong> language. It is built on top of
+                  <strong>Hexagon</strong>, a simple and lightweight monolithic
+                  kernel with support for protected mode (32-bit), device
+                  interface, and FAT16 file system (read and write). Compatible
+                  with old hardware (1999 onwards) and current.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/hexagonix"
                 target="_blank"
@@ -808,22 +993,33 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2011-2018</div>
               <h3>Netuno S.O</h3>
-              <p>
-                Netuno S.O (Netuno OS) is an
-                <strong>authorial Linux distribution</strong> created from the
-                tutorials and guides of the
-                <strong
-                  ><a
-                    class="timeline-content-link"
-                    href="https://www.linuxfromscratch.org/"
-                    >Linux From Scratch</a
-                  ></strong
-                >
-                project. It uses a kernel from the 2.6.x series and only a
-                command-line interface. Although it is not available in a
-                repository on my GitHub, a disk image in its latest version can
-                be requested.
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Netuno S.O (Netuno OS) is an
+                  <strong>authorial Linux distribution</strong> created from the
+                  tutorials and guides of the
+                  <strong
+                    ><a
+                      class="timeline-content-link"
+                      href="https://www.linuxfromscratch.org/"
+                      >Linux From Scratch</a
+                    ></strong
+                  >
+                  project. It uses a kernel from the 2.6.x series and only a
+                  command-line interface. Although it is not available in a
+                  repository on my GitHub, a disk image in its latest version
+                  can be requested.
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="mailto:felipenldev@gmail.com"
                 target="_blank"
@@ -842,14 +1038,25 @@
             <div class="timeline-content">
               <div class="timeline-ano-projeto">2011-2014</div>
               <h3>Bin S.O</h3>
-              <p>
-                Bin S.O is an operating system made as a hobby, to consolidate
-                studies carried out in hardware and
-                <strong>x86 Assembly</strong> (16-bit). It is a simple operating
-                system, single-task and single-user, composed of a series of
-                utilities and a very simple kernel, with BinFS file system
-                (developed for it).
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  Bin S.O is an operating system made as a hobby, to consolidate
+                  studies carried out in hardware and
+                  <strong>x86 Assembly</strong> (16-bit). It is a simple
+                  operating system, single-task and single-user, composed of a
+                  series of utilities and a very simple kernel, with BinFS file
+                  system (developed for it).
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <a
                 href="https://github.com/felipenlunkes/Bin-S.O"
                 target="_blank"
@@ -872,349 +1079,398 @@
               <h3>UbiSafe</h3>
               <h4>Senior Backend Developer</h4>
               <div class="timeline-ano">08/2026-present</div>
-              <p>
-                I currently work as a Senior Backend Developer, holding this
-                title alongside the leadership of the integration engineering
-                team, focused on developing scalable solutions for communication
-                between the platform, devices and external systems.
-              </p>
-              <br />
-              <p>
-                My work combines hands-on development (reading and implementing
-                communication protocols, designing connectors and integration
-                services, certifying devices and platforms) with technical
-                leadership responsibilities, such as defining architecture and
-                technologies together with the software architect, code review
-                and mentoring other developers.
-              </p>
-              <br />
-              <p>
-                I have been deepening my knowledge of low-level communication
-                (sockets, proprietary binary protocols), event-driven
-                architecture and distributed systems, always with a focus on
-                solutions that need to handle real volume/scale (a large number
-                of devices connected and communicating in parallel), complex
-                protocols, high volumes of processed events, concurrency, among
-                other factors, in a reliable and performant way.
-              </p>
-              <br />
-              <p>
-                One of the most important aspects of my work is the ability to
-                critically analyze problems before implementation, evaluating
-                impacts, anticipating risks and identifying opportunities to
-                evolve the solution, especially relevant in a domain where
-                poorly evaluated technical decisions carry a high cost to fix.
-              </p>
-              <p class="timeline-competencias">
-                <strong>Skills and technologies:</strong>
-                <span class="timeline-competencia">Java</span> ·
-                <span class="timeline-competencia">Netty</span> ·
-                <span class="timeline-competencia">Rust</span> ·
-                <span class="timeline-competencia">Spring Framework</span> ·
-                <span class="timeline-competencia">Spring Boot</span> ·
-                <span class="timeline-competencia">Hibernate</span> ·
-                <span class="timeline-competencia">Apache Kafka</span> ·
-                <span class="timeline-competencia">RabbitMQ</span> ·
-                <span class="timeline-competencia">Redis/Valkey</span> ·
-                <span class="timeline-competencia">MySQL</span> ·
-                <span class="timeline-competencia">MongoDB</span> ·
-                <span class="timeline-competencia">Docker</span> ·
-                <span class="timeline-competencia">Linux</span> ·
-                <span class="timeline-competencia"
-                  >Event-driven microservices architecture</span
-                >
-                ·
-                <span class="timeline-competencia">Amazon SQS</span> ·
-                <span class="timeline-competencia">Amazon S3</span> ·
-                <span class="timeline-competencia">Amazon Lambda</span> ·
-                <span class="timeline-competencia">Amazon EC2</span> ·
-                <span class="timeline-competencia">Caffeine</span> ·
-                <span class="timeline-competencia"
-                  >Event-driven asynchronous network communication</span
-                >
-                ·
-                <span class="timeline-competencia">Temporal.io framework</span>
-                ·
-                <span class="timeline-competencia">Distributed systems</span>
-                ·
-                <span class="timeline-competencia"
-                  >Proprietary communication protocols</span
-                >
-                ·
-                <span class="timeline-competencia">Device certification</span>
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  I currently work as a Senior Backend Developer, holding this
+                  title alongside the leadership of the integration engineering
+                  team, focused on developing scalable solutions for
+                  communication between the platform, devices and external
+                  systems.
+                </p>
+                <p>
+                  My work combines hands-on development (reading and
+                  implementing communication protocols, designing connectors and
+                  integration services, certifying devices and platforms) with
+                  technical leadership responsibilities, such as defining
+                  architecture and technologies together with the software
+                  architect, code review and mentoring other developers.
+                </p>
+                <p>
+                  I have been deepening my knowledge of low-level communication
+                  (sockets, proprietary binary protocols), event-driven
+                  architecture and distributed systems, always with a focus on
+                  solutions that need to handle real volume/scale (a large
+                  number of devices connected and communicating in parallel),
+                  complex protocols, high volumes of processed events,
+                  concurrency, among other factors, in a reliable and performant
+                  way.
+                </p>
+                <p>
+                  One of the most important aspects of my work is the ability to
+                  critically analyze problems before implementation, evaluating
+                  impacts, anticipating risks and identifying opportunities to
+                  evolve the solution, especially relevant in a domain where
+                  poorly evaluated technical decisions carry a high cost to fix.
+                </p>
+                <p class="timeline-competencias">
+                  <strong>Skills and technologies:</strong>
+                  <span class="timeline-competencia">Java</span> ·
+                  <span class="timeline-competencia">Netty</span> ·
+                  <span class="timeline-competencia">Rust</span> ·
+                  <span class="timeline-competencia">Spring Framework</span> ·
+                  <span class="timeline-competencia">Spring Boot</span> ·
+                  <span class="timeline-competencia">Hibernate</span> ·
+                  <span class="timeline-competencia">Apache Kafka</span> ·
+                  <span class="timeline-competencia">RabbitMQ</span> ·
+                  <span class="timeline-competencia">Redis/Valkey</span> ·
+                  <span class="timeline-competencia">MySQL</span> ·
+                  <span class="timeline-competencia">MongoDB</span> ·
+                  <span class="timeline-competencia">Docker</span> ·
+                  <span class="timeline-competencia">Linux</span> ·
+                  <span class="timeline-competencia"
+                    >Event-driven microservices architecture</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Amazon SQS</span> ·
+                  <span class="timeline-competencia">Amazon S3</span> ·
+                  <span class="timeline-competencia">Amazon Lambda</span> ·
+                  <span class="timeline-competencia">Amazon EC2</span> ·
+                  <span class="timeline-competencia">Caffeine</span> ·
+                  <span class="timeline-competencia"
+                    >Event-driven asynchronous network communication</span
+                  >
+                  ·
+                  <span class="timeline-competencia"
+                    >Temporal.io framework</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Distributed systems</span>
+                  ·
+                  <span class="timeline-competencia"
+                    >Proprietary communication protocols</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Device certification</span>
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <hr class="timeline-cargo-divider" />
               <h4>Lead Integration Engineer</h4>
               <div class="timeline-ano">11/2025-present</div>
-              <p>
-                I took on the leadership of the team responsible for the
-                platform's integrations with devices and external platforms,
-                consolidating the effort I had started building as a mid-level
-                developer within the development team.
-              </p>
-              <br />
-              <p>
-                I took on the technical leadership of the team responsible for
-                the platform's integrations with external devices and platforms,
-                consolidating the front I had started developing as a Mid-Level
-                Developer within the engineering team.
-              </p>
-              <br />
-              <p>
-                I work on proposing and defining architecture and technologies
-                for new integrations together with the software architect,
-                evaluating trade-offs, the different communication protocols
-                offered by device manufacturers, communication formats
-                (including low-level binary protocols), and certification
-                strategies for new devices and partners. I'm also responsible
-                for the team's code review and for the technical mentoring of
-                other developers, supporting design decisions and best practices
-                specific to this domain (including asynchronous communication,
-                fault tolerance, protocol versioning, etc.). I also began the
-                implementation of new tools, such as the Temporal.io framework.
-              </p>
-              <br />
-              <p>
-                I continue to actively develop solutions, mainly in Java (using
-                Netty for low-level communication) and Rust, in addition to
-                taking part in technical discussions and decisions about
-                architecture applied to the context of integrations with devices
-                and platforms. I developed and/or led the development of a
-                series of connector applications that enable active,
-                bidirectional communication with alarm centrals (control
-                panels), with isolation between clients and strong
-                observability, and I remain involved in continuous improvements
-                across the entire ecosystem we built. These applications are
-                used daily by thousands of devices communicating simultaneously,
-                across multiple clients.
-              </p>
-              <br />
-              <p>
-                One of the aspects I value most in this role is critical
-                analysis before implementation, a discipline I keep practicing
-                and developing further: evaluating risks, impacts and
-                alternative solutions, which is especially relevant in this
-                domain, where protocol misinterpretation or poorly evaluated
-                architectural decisions carry a high cost to fix after a device
-                has already been certified.
-              </p>
-              <p class="timeline-competencias">
-                <strong>Skills and technologies:</strong>
-                <span class="timeline-competencia">Java</span> ·
-                <span class="timeline-competencia">Netty</span> ·
-                <span class="timeline-competencia">Rust</span> ·
-                <span class="timeline-competencia"
-                  >Spring Framework/Spring Boot</span
-                >
-                ·
-                <span class="timeline-competencia">Hibernate</span> ·
-                <span class="timeline-competencia">Apache Kafka</span> ·
-                <span class="timeline-competencia">RabbitMQ</span> ·
-                <span class="timeline-competencia">Redis/Valkey</span> ·
-                <span class="timeline-competencia">MySQL</span> ·
-                <span class="timeline-competencia">MongoDB</span> ·
-                <span class="timeline-competencia">Docker</span> ·
-                <span class="timeline-competencia">Linux</span> ·
-                <span class="timeline-competencia"
-                  >Event-driven microservices architecture</span
-                >
-                ·
-                <span class="timeline-competencia">Amazon SQS</span> ·
-                <span class="timeline-competencia">Amazon S3</span> ·
-                <span class="timeline-competencia">Amazon Lambda</span> ·
-                <span class="timeline-competencia">Amazon EC2</span> ·
-                <span class="timeline-competencia">Caffeine</span> ·
-                <span class="timeline-competencia"
-                  >Event-driven asynchronous network communication</span
-                >
-                ·
-                <span class="timeline-competencia">Temporal.io framework</span>
-                ·
-                <span class="timeline-competencia"
-                  >Proprietary communication protocols</span
-                >
-                ·
-                <span class="timeline-competencia">Device certification</span>
-                ·
-                <span class="timeline-competencia">Technical leadership</span>
-                ·
-                <span class="timeline-competencia">Mentoring</span> ·
-                <span class="timeline-competencia">Code review</span>
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  I took on the leadership of the team responsible for the
+                  platform's integrations with devices and external platforms,
+                  consolidating the effort I had started building as a mid-level
+                  developer within the development team.
+                </p>
+                <p>
+                  I took on the technical leadership of the team responsible for
+                  the platform's integrations with external devices and
+                  platforms, consolidating the front I had started developing as
+                  a Mid-Level Developer within the engineering team.
+                </p>
+                <p>
+                  I work on proposing and defining architecture and technologies
+                  for new integrations together with the software architect,
+                  evaluating trade-offs, the different communication protocols
+                  offered by device manufacturers, communication formats
+                  (including low-level binary protocols), and certification
+                  strategies for new devices and partners. I'm also responsible
+                  for the team's code review and for the technical mentoring of
+                  other developers, supporting design decisions and best
+                  practices specific to this domain (including asynchronous
+                  communication, fault tolerance, protocol versioning, etc.). I
+                  also began the implementation of new tools, such as the
+                  Temporal.io framework.
+                </p>
+                <p>
+                  I continue to actively develop solutions, mainly in Java
+                  (using Netty for low-level communication) and Rust, in
+                  addition to taking part in technical discussions and decisions
+                  about architecture applied to the context of integrations with
+                  devices and platforms. I developed and/or led the development
+                  of a series of connector applications that enable active,
+                  bidirectional communication with alarm centrals (control
+                  panels), with isolation between clients and strong
+                  observability, and I remain involved in continuous
+                  improvements across the entire ecosystem we built. These
+                  applications are used daily by thousands of devices
+                  communicating simultaneously, across multiple clients.
+                </p>
+                <p>
+                  One of the aspects I value most in this role is critical
+                  analysis before implementation, a discipline I keep practicing
+                  and developing further: evaluating risks, impacts and
+                  alternative solutions, which is especially relevant in this
+                  domain, where protocol misinterpretation or poorly evaluated
+                  architectural decisions carry a high cost to fix after a
+                  device has already been certified.
+                </p>
+                <p class="timeline-competencias">
+                  <strong>Skills and technologies:</strong>
+                  <span class="timeline-competencia">Java</span> ·
+                  <span class="timeline-competencia">Netty</span> ·
+                  <span class="timeline-competencia">Rust</span> ·
+                  <span class="timeline-competencia"
+                    >Spring Framework/Spring Boot</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Hibernate</span> ·
+                  <span class="timeline-competencia">Apache Kafka</span> ·
+                  <span class="timeline-competencia">RabbitMQ</span> ·
+                  <span class="timeline-competencia">Redis/Valkey</span> ·
+                  <span class="timeline-competencia">MySQL</span> ·
+                  <span class="timeline-competencia">MongoDB</span> ·
+                  <span class="timeline-competencia">Docker</span> ·
+                  <span class="timeline-competencia">Linux</span> ·
+                  <span class="timeline-competencia"
+                    >Event-driven microservices architecture</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Amazon SQS</span> ·
+                  <span class="timeline-competencia">Amazon S3</span> ·
+                  <span class="timeline-competencia">Amazon Lambda</span> ·
+                  <span class="timeline-competencia">Amazon EC2</span> ·
+                  <span class="timeline-competencia">Caffeine</span> ·
+                  <span class="timeline-competencia"
+                    >Event-driven asynchronous network communication</span
+                  >
+                  ·
+                  <span class="timeline-competencia"
+                    >Temporal.io framework</span
+                  >
+                  ·
+                  <span class="timeline-competencia"
+                    >Proprietary communication protocols</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Device certification</span>
+                  ·
+                  <span class="timeline-competencia">Technical leadership</span>
+                  ·
+                  <span class="timeline-competencia">Mentoring</span> ·
+                  <span class="timeline-competencia">Code review</span>
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <hr class="timeline-cargo-divider" />
               <h4>Backend Developer</h4>
               <div class="timeline-ano">07/2024-10/2025</div>
-              <p>
-                This was the period in which my role expanded significantly. In
-                addition to continuing to contribute to the evolution of the
-                platform's business applications, I also started working on a
-                new front: developing solutions that integrate the UbiSafe
-                platform with external devices and platforms. In the devices
-                area, I began working on communication with, and certification
-                of, alarm control panels.
-              </p>
-              <br />
-              <p>
-                In this new front, my work came to cover the full technical
-                feasibility cycle of a new integration: reading and interpreting
-                proprietary communication protocols (often based on third-party
-                technical documentation), defining the most suitable tools and
-                implementation approach for each case, developing the
-                connectors/services responsible for the communication, and
-                leading the device certification process together with other
-                members of UbiSafe's engineering team.
-              </p>
-              <br />
-              <p>
-                To support this, I expanded my technical toolset with Rust, used
-                in components that required tighter control and better
-                performance when handling binary protocols, and Python, along
-                with non-relational databases (MongoDB) and additional messaging
-                with RabbitMQ, while continuing to use relational and
-                non-relational databases, distributed caching and Kafka.
-              </p>
-              <br />
-              <p>
-                This period also marked a shift in how I approached problems
-                before implementing them. I started dedicating more time to
-                analyzing risks, protocol limitations and the impact of each
-                technical decision before starting development and testing,
-                ensuring higher quality deliveries.
-              </p>
-              <p class="timeline-competencias">
-                <strong>Skills and technologies:</strong>
-                <span class="timeline-competencia">Java</span> ·
-                <span class="timeline-competencia">Spring Framework</span> ·
-                <span class="timeline-competencia">Spring Boot</span> ·
-                <span class="timeline-competencia">Hibernate</span> ·
-                <span class="timeline-competencia">Rust</span> ·
-                <span class="timeline-competencia">Python</span> ·
-                <span class="timeline-competencia">MySQL</span> ·
-                <span class="timeline-competencia">MongoDB</span> ·
-                <span class="timeline-competencia">Redis/Valkey</span> ·
-                <span class="timeline-competencia">RabbitMQ</span> ·
-                <span class="timeline-competencia">Apache Kafka</span> ·
-                <span class="timeline-competencia">Amazon Kinesis</span> ·
-                <span class="timeline-competencia">AWS SQS</span> ·
-                <span class="timeline-competencia">Amazon S3</span> ·
-                <span class="timeline-competencia">AWS Lambda</span> ·
-                <span class="timeline-competencia">Amazon EC2</span> ·
-                <span class="timeline-competencia"
-                  >Event-driven asynchronous network communication</span
-                >
-                ·
-                <span class="timeline-competencia">Docker</span> ·
-                <span class="timeline-competencia">Linux</span> ·
-                <span class="timeline-competencia"
-                  >Proprietary communication protocols</span
-                >
-                ·
-                <span class="timeline-competencia">Device certification</span>
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  This was the period in which my role expanded significantly.
+                  In addition to continuing to contribute to the evolution of
+                  the platform's business applications, I also started working
+                  on a new front: developing solutions that integrate the
+                  UbiSafe platform with external devices and platforms. In the
+                  devices area, I began working on communication with, and
+                  certification of, alarm control panels.
+                </p>
+                <p>
+                  In this new front, my work came to cover the full technical
+                  feasibility cycle of a new integration: reading and
+                  interpreting proprietary communication protocols (often based
+                  on third-party technical documentation), defining the most
+                  suitable tools and implementation approach for each case,
+                  developing the connectors/services responsible for the
+                  communication, and leading the device certification process
+                  together with other members of UbiSafe's engineering team.
+                </p>
+                <p>
+                  To support this, I expanded my technical toolset with Rust,
+                  used in components that required tighter control and better
+                  performance when handling binary protocols, and Python, along
+                  with non-relational databases (MongoDB) and additional
+                  messaging with RabbitMQ, while continuing to use relational
+                  and non-relational databases, distributed caching and Kafka.
+                </p>
+                <p>
+                  This period also marked a shift in how I approached problems
+                  before implementing them. I started dedicating more time to
+                  analyzing risks, protocol limitations and the impact of each
+                  technical decision before starting development and testing,
+                  ensuring higher quality deliveries.
+                </p>
+                <p class="timeline-competencias">
+                  <strong>Skills and technologies:</strong>
+                  <span class="timeline-competencia">Java</span> ·
+                  <span class="timeline-competencia">Spring Framework</span> ·
+                  <span class="timeline-competencia">Spring Boot</span> ·
+                  <span class="timeline-competencia">Hibernate</span> ·
+                  <span class="timeline-competencia">Rust</span> ·
+                  <span class="timeline-competencia">Python</span> ·
+                  <span class="timeline-competencia">MySQL</span> ·
+                  <span class="timeline-competencia">MongoDB</span> ·
+                  <span class="timeline-competencia">Redis/Valkey</span> ·
+                  <span class="timeline-competencia">RabbitMQ</span> ·
+                  <span class="timeline-competencia">Apache Kafka</span> ·
+                  <span class="timeline-competencia">Amazon Kinesis</span> ·
+                  <span class="timeline-competencia">AWS SQS</span> ·
+                  <span class="timeline-competencia">Amazon S3</span> ·
+                  <span class="timeline-competencia">AWS Lambda</span> ·
+                  <span class="timeline-competencia">Amazon EC2</span> ·
+                  <span class="timeline-competencia"
+                    >Event-driven asynchronous network communication</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Docker</span> ·
+                  <span class="timeline-competencia">Linux</span> ·
+                  <span class="timeline-competencia"
+                    >Proprietary communication protocols</span
+                  >
+                  ·
+                  <span class="timeline-competencia">Device certification</span>
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <hr class="timeline-cargo-divider" />
               <h4>Junior Backend Developer</h4>
               <div class="timeline-ano">11/2023-06/2024</div>
-              <p>
-                After being promoted to Junior Developer, I continued working on
-                the team responsible for the platform's business applications,
-                with more autonomy over the design and implementation of
-                features, from requirements gathering through delivery and
-                production monitoring. I also began studying topics related to
-                requirements engineering and software architecture.
-              </p>
-              <br />
-              <p>
-                I expanded my work in RESTful API design and the evolution of
-                services within a microservices architecture, and deepened my
-                use of event-driven messaging (Apache Kafka and Amazon Kinesis)
-                for integration between internal services, aiming to reduce
-                coupling, along with persistence using MySQL and Redis.
-              </p>
-              <br />
-              <p>
-                I also started using Python for complementary routines and
-                strengthened unit and integration test coverage, aiming for
-                greater reliability in deliveries within a microservices
-                environment with multiple interdependent services. At this stage
-                of my career, I played an active role in the migration of the
-                platform's first client, a large and complex migration. I worked
-                on feature development, critical bug fixes, and rollout
-                monitoring. My involvement in this migration, together with the
-                knowledge I gained from it, paved the way for my promotion to
-                Mid-Level Developer.
-              </p>
-              <p class="timeline-competencias">
-                <strong>Skills and technologies:</strong>
-                <span class="timeline-competencia">Java</span> ·
-                <span class="timeline-competencia">Spring Framework</span> ·
-                <span class="timeline-competencia">Spring Boot</span> ·
-                <span class="timeline-competencia">Hibernate</span> ·
-                <span class="timeline-competencia">Python</span> ·
-                <span class="timeline-competencia">MySQL</span> ·
-                <span class="timeline-competencia">Redis</span> ·
-                <span class="timeline-competencia">Apache Kafka</span> ·
-                <span class="timeline-competencia">Amazon Kinesis</span> ·
-                <span class="timeline-competencia">AWS SQS</span> ·
-                <span class="timeline-competencia">Amazon S3</span> ·
-                <span class="timeline-competencia">AWS Lambda</span> ·
-                <span class="timeline-competencia">Docker</span> ·
-                <span class="timeline-competencia">Linux</span> ·
-                <span class="timeline-competencia">RESTful APIs</span> ·
-                <span class="timeline-competencia"
-                  >Event-driven microservices architecture</span
-                >
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  After being promoted to Junior Developer, I continued working
+                  on the team responsible for the platform's business
+                  applications, with more autonomy over the design and
+                  implementation of features, from requirements gathering
+                  through delivery and production monitoring. I also began
+                  studying topics related to requirements engineering and
+                  software architecture.
+                </p>
+                <p>
+                  I expanded my work in RESTful API design and the evolution of
+                  services within a microservices architecture, and deepened my
+                  use of event-driven messaging (Apache Kafka and Amazon
+                  Kinesis) for integration between internal services, aiming to
+                  reduce coupling, along with persistence using MySQL and Redis.
+                </p>
+                <p>
+                  I also started using Python for complementary routines and
+                  strengthened unit and integration test coverage, aiming for
+                  greater reliability in deliveries within a microservices
+                  environment with multiple interdependent services. At this
+                  stage of my career, I played an active role in the migration
+                  of the platform's first client, a large and complex migration.
+                  I worked on feature development, critical bug fixes, and
+                  rollout monitoring. My involvement in this migration, together
+                  with the knowledge I gained from it, paved the way for my
+                  promotion to Mid-Level Developer.
+                </p>
+                <p class="timeline-competencias">
+                  <strong>Skills and technologies:</strong>
+                  <span class="timeline-competencia">Java</span> ·
+                  <span class="timeline-competencia">Spring Framework</span> ·
+                  <span class="timeline-competencia">Spring Boot</span> ·
+                  <span class="timeline-competencia">Hibernate</span> ·
+                  <span class="timeline-competencia">Python</span> ·
+                  <span class="timeline-competencia">MySQL</span> ·
+                  <span class="timeline-competencia">Redis</span> ·
+                  <span class="timeline-competencia">Apache Kafka</span> ·
+                  <span class="timeline-competencia">Amazon Kinesis</span> ·
+                  <span class="timeline-competencia">AWS SQS</span> ·
+                  <span class="timeline-competencia">Amazon S3</span> ·
+                  <span class="timeline-competencia">AWS Lambda</span> ·
+                  <span class="timeline-competencia">Docker</span> ·
+                  <span class="timeline-competencia">Linux</span> ·
+                  <span class="timeline-competencia">RESTful APIs</span> ·
+                  <span class="timeline-competencia"
+                    >Event-driven microservices architecture</span
+                  >
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
               <hr class="timeline-cargo-divider" />
               <h4>Trainee Backend Developer</h4>
               <div class="timeline-ano">06/2023-10/2023</div>
-              <p>
-                I started my professional career in backend development on a
-                team responsible for the platform's core business applications,
-                contributing to the development of new features and the
-                maintenance of existing services, under an event-driven
-                microservices architecture.
-              </p>
-              <br />
-              <p>
-                I took part in the full development cycle, from contract
-                definition and implementation to writing unit and integration
-                tests, using Java with Spring Framework and Spring Boot to build
-                RESTful APIs, along with relational persistence (MySQL) and
-                caching with Redis.
-              </p>
-              <br />
-              <p>
-                I also worked with event-driven asynchronous communication using
-                Apache Kafka and Amazon Kinesis, and with cloud services such as
-                AWS SQS, Amazon S3 and AWS Lambda (serverless), in addition to
-                using containerized dependencies with Docker on Linux.
-              </p>
-              <br />
-              <p>
-                This stage of my career allowed me to build solid foundations in
-                backend development with Java and software architecture best
-                practices in a real production environment.
-              </p>
-              <p class="timeline-competencias">
-                <strong>Skills and technologies:</strong>
-                <span class="timeline-competencia">Java</span> ·
-                <span class="timeline-competencia">Spring Framework</span> ·
-                <span class="timeline-competencia">Spring Boot</span> ·
-                <span class="timeline-competencia">Hibernate</span> ·
-                <span class="timeline-competencia">MySQL</span> ·
-                <span class="timeline-competencia">Redis</span> ·
-                <span class="timeline-competencia">Apache Kafka</span> ·
-                <span class="timeline-competencia">Amazon Kinesis</span> ·
-                <span class="timeline-competencia">AWS SQS</span> ·
-                <span class="timeline-competencia">Amazon S3</span> ·
-                <span class="timeline-competencia">AWS Lambda</span> ·
-                <span class="timeline-competencia">Docker</span> ·
-                <span class="timeline-competencia">Linux</span> ·
-                <span class="timeline-competencia">RESTful APIs</span> ·
-                <span class="timeline-competencia"
-                  >Event-driven microservices architecture</span
-                >
-              </p>
+              <div class="cargo-descricao">
+                <p>
+                  I started my professional career in backend development on a
+                  team responsible for the platform's core business
+                  applications, contributing to the development of new features
+                  and the maintenance of existing services, under an
+                  event-driven microservices architecture.
+                </p>
+                <p>
+                  I took part in the full development cycle, from contract
+                  definition and implementation to writing unit and integration
+                  tests, using Java with Spring Framework and Spring Boot to
+                  build RESTful APIs, along with relational persistence (MySQL)
+                  and caching with Redis.
+                </p>
+                <p>
+                  I also worked with event-driven asynchronous communication
+                  using Apache Kafka and Amazon Kinesis, and with cloud services
+                  such as AWS SQS, Amazon S3 and AWS Lambda (serverless), in
+                  addition to using containerized dependencies with Docker on
+                  Linux.
+                </p>
+                <p>
+                  This stage of my career allowed me to build solid foundations
+                  in backend development with Java and software architecture
+                  best practices in a real production environment.
+                </p>
+                <p class="timeline-competencias">
+                  <strong>Skills and technologies:</strong>
+                  <span class="timeline-competencia">Java</span> ·
+                  <span class="timeline-competencia">Spring Framework</span> ·
+                  <span class="timeline-competencia">Spring Boot</span> ·
+                  <span class="timeline-competencia">Hibernate</span> ·
+                  <span class="timeline-competencia">MySQL</span> ·
+                  <span class="timeline-competencia">Redis</span> ·
+                  <span class="timeline-competencia">Apache Kafka</span> ·
+                  <span class="timeline-competencia">Amazon Kinesis</span> ·
+                  <span class="timeline-competencia">AWS SQS</span> ·
+                  <span class="timeline-competencia">Amazon S3</span> ·
+                  <span class="timeline-competencia">AWS Lambda</span> ·
+                  <span class="timeline-competencia">Docker</span> ·
+                  <span class="timeline-competencia">Linux</span> ·
+                  <span class="timeline-competencia">RESTful APIs</span> ·
+                  <span class="timeline-competencia"
+                    >Event-driven microservices architecture</span
+                  >
+                </p>
+              </div>
+              <button
+                class="cargo-toggle"
+                data-more="Show more"
+                data-less="Show less"
+                aria-expanded="false"
+                onclick="alternarCargo(this)"
+              >
+                Show more
+              </button>
             </div>
           </div>
         </div>
@@ -1449,5 +1705,7 @@
     <footer>
       <p>© 2024-2026 Felipe Lunkes. All rights reserved.</p>
     </footer>
+
+    <button id="top-btn" class="top-btn" onclick="voltarAoTopo()">⬆</button>
   </body>
 </html>
