@@ -1010,6 +1010,10 @@ footer p {
     text-align: center;
   }
 
+  .projeto-item h3 {
+    text-align: center;
+  }
+
   .cv-link {
     display: flex;
     justify-content: center;
