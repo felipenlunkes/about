@@ -135,6 +135,17 @@ function alternarCargo(botao) {
     descricao.style.maxHeight = aberto ? descricao.scrollHeight + 'px' : '';
     botao.textContent = aberto ? botao.dataset.less : botao.dataset.more;
     botao.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+
+    // A lista "Meus projetos" tem a altura travada em px pelo exibirSecao().
+    // Ao expandir/recolher um card dentro dela, essa altura precisa ser
+    // recalculada, senão o conteúdo extra vaza por cima da seção seguinte.
+    const listaProjetos = descricao.closest('#timeline-projetos-container-cl');
+    if (listaProjetos && listaProjetos.classList.contains('open')) {
+        descricao.addEventListener('transitionend', function ajustarAltura(e) {
+            if (e.propertyName !== 'max-height') return;
+            listaProjetos.style.height = listaProjetos.scrollHeight + 'px';
+        }, { once: true });
+    }
 }
 
 function exibirSecao() {
