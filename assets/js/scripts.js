@@ -232,6 +232,44 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Alternância de tema claro/escuro. Sem localStorage: inicia sempre pelo
+// padrão do dispositivo (prefers-color-scheme) e a escolha manual só vale
+// para a sessão atual da página, voltando ao padrão do sistema ao recarregar.
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('themeToggle');
+    if (!themeToggle) return;
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function temaAtivo() {
+        return document.documentElement.getAttribute('data-theme')
+            || (prefersDark.matches ? 'dark' : 'light');
+    }
+
+    function atualizarLabel() {
+        const rotulo = temaAtivo() === 'dark'
+            ? themeToggle.dataset.labelLight
+            : themeToggle.dataset.labelDark;
+        themeToggle.setAttribute('aria-label', rotulo);
+    }
+
+    themeToggle.addEventListener('click', function() {
+        document.documentElement.setAttribute(
+            'data-theme',
+            temaAtivo() === 'dark' ? 'light' : 'dark'
+        );
+        atualizarLabel();
+    });
+
+    prefersDark.addEventListener('change', function() {
+        if (!document.documentElement.getAttribute('data-theme')) {
+            atualizarLabel();
+        }
+    });
+
+    atualizarLabel();
+});
+
 window.onscroll = function() {
     const btn = document.getElementById("top-btn");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {

@@ -36,10 +36,42 @@ Licenciado sob licença BSD-3-Clause. Veja o arquivo LICENSE para mais informaç
   --ink-500: #7a6e5f;
   --paper-0: #f2e4c8;
   --paper-1: #e6cd9c;
+  --card-bg: #fffdf8;
   --line: rgba(189, 135, 53, 0.22);
   --shadow: 0 16px 32px -20px rgba(42, 36, 29, 0.35);
   --nav-h: 76px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Tema escuro: segue o padrão do dispositivo por padrão (prefers-color-scheme).
+   O botão na navegação pode forçar claro/escuro via [data-theme] no <html>,
+   mas essa escolha não é salva. Ao recarregar, volta ao padrão do dispositivo. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --orange-200: #4a3620;
+    --orange-600: #e0a752;
+    --ink-900: #f3e6cf;
+    --ink-700: #d8c7a9;
+    --ink-500: #a99878;
+    --paper-0: #1b1712;
+    --paper-1: #241d15;
+    --card-bg: #2a2118;
+    --line: rgba(217, 160, 74, 0.28);
+    --shadow: 0 16px 32px -20px rgba(0, 0, 0, 0.65);
+  }
+}
+
+:root[data-theme="dark"] {
+  --orange-200: #4a3620;
+  --orange-600: #e0a752;
+  --ink-900: #f3e6cf;
+  --ink-700: #d8c7a9;
+  --ink-500: #a99878;
+  --paper-0: #1b1712;
+  --paper-1: #241d15;
+  --card-bg: #2a2118;
+  --line: rgba(217, 160, 74, 0.28);
+  --shadow: 0 16px 32px -20px rgba(0, 0, 0, 0.65);
 }
 
 html {
@@ -63,6 +95,7 @@ body {
   line-height: 1.6;
   background: linear-gradient(180deg, var(--orange-200), var(--paper-0) 320px);
   color: var(--ink-700);
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
 }
 
 section {
@@ -87,6 +120,7 @@ header nav {
   min-height: var(--nav-h);
   background: var(--paper-0);
   border-bottom: 1px solid var(--line);
+  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
 }
 
 .nav-brand {
@@ -159,6 +193,54 @@ header nav ul li a:hover {
 
 .nav-toggle[aria-expanded="true"] span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper-0);
+  color: var(--ink-900);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.3s var(--ease), color 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.theme-toggle:hover {
+  color: var(--orange-500);
+  border-color: var(--orange-500);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle .icon-moon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
+    display: none;
+  }
+
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+    display: block;
+  }
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: block;
 }
 
 /* Hero */
@@ -416,7 +498,7 @@ header nav ul li a:hover {
 .projeto-item {
   padding: 22px;
   border: 1px solid var(--line);
-  background-color: #fffdf8;
+  background-color: var(--card-bg);
   box-shadow: none;
   transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease),
     border-color 0.35s var(--ease);
@@ -656,7 +738,7 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #fffdf8;
+  background-color: var(--card-bg);
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 26px;
@@ -673,7 +755,7 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #fffdf8;
+  background-color: var(--card-bg);
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 26px;
@@ -782,7 +864,7 @@ header nav ul li a:hover {
   right: 0;
   bottom: 0;
   height: 40px;
-  background: linear-gradient(to bottom, transparent, #fffdf8);
+  background: linear-gradient(to bottom, transparent, var(--card-bg));
   pointer-events: none;
 }
 
@@ -989,6 +1071,10 @@ footer p {
   header nav ul li a {
     display: block;
     padding: 16px 28px;
+  }
+
+  header nav ul li .theme-toggle {
+    margin: 12px 28px;
   }
 
   .nav-toggle {
