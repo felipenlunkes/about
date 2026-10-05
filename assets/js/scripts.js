@@ -138,12 +138,19 @@ function alternarCargo(botao) {
 
     // A lista "Meus projetos" tem a altura travada em px pelo exibirSecao().
     // Ao expandir/recolher um card dentro dela, essa altura precisa ser
-    // recalculada, senão o conteúdo extra vaza por cima da seção seguinte.
+    // recalculada, senão o conteúdo extra vaza por cima da seção seguinte
     const listaProjetos = descricao.closest('#timeline-projetos-container-cl');
     if (listaProjetos && listaProjetos.classList.contains('open')) {
         descricao.addEventListener('transitionend', function ajustarAltura(e) {
             if (e.propertyName !== 'max-height') return;
-            listaProjetos.style.height = listaProjetos.scrollHeight + 'px';
+            // scrollHeight nunca é menor que a altura fixada, então ao recolher
+            // é preciso medir com height: auto para obter a altura real
+            const alturaAtual = listaProjetos.style.height;
+            listaProjetos.style.height = 'auto';
+            const novaAltura = listaProjetos.scrollHeight + 'px';
+            listaProjetos.style.height = alturaAtual;
+            listaProjetos.offsetHeight; // força reflow para a transição partir da altura atual
+            listaProjetos.style.height = novaAltura;
         }, { once: true });
     }
 }
